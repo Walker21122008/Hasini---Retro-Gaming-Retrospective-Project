@@ -19,6 +19,7 @@ The NES used strict cartridge-based hardware licensing and a lockout chip (the 1
 `Castlevania (USA).nes` - loaded into FCEUX, launched from the Linux terminal with `fceux`. I am genuinely bad at video games, and Castlevania made sure I knew it. I died repeatedly in Stage 1 before I got far enough to see Stage 2. Most of my time with this game was spent replaying stage 1 again and again.
 
 #### Observations
+The gothic atmosphere here: the candles, the logo, the lettering, is built entirely from 25 simultaneous colours and 8×8 pixel tiles. Compared to what the SNES title screen does with 256 colours and gradient shading, this looks flat, but it doesn't feel cheap. The NES PPU separates sprites (aka the bats and candles) from background tiles, so the candle flames are sprites flickering over a static tile layer. 
 
 ## Platform 2: Game Boy (Sharp LR35902, 4.19 MHz, 8-bit)
  
