@@ -20,8 +20,15 @@ The NES used strict cartridge-based hardware licensing and a lockout chip (the 1
 `Castlevania (USA).nes` - loaded into FCEUX, launched from the Linux terminal with `fceux`. I am genuinely bad at video games, and Castlevania made sure I knew it. I died repeatedly in Stage 1 before I got far enough to see Stage 2. Most of my time with this game was spent replaying stage 1 again and again.
 
 #### Observations
-The gothic atmosphere here: the mini castle, the logo, the lettering, is built entirely from almost 25 simultaneous colours and 8×8 pixel tiles. Compared to what the SNES title screen does with 256 colours and gradient shading, this looks flat, but it doesn't feel cheap and gives a very similar feel. The NES PPU separates sprites (aka the bats and mini mansion) from background tiles/
+The background is pure black. The NES can only show 25 colours at once, so Konami spent those slots on the logo and left the background empty. You can count the colours used: green logo, red banner, purple outline, orange castle, gray borders. That's most of the palette already gone on just the title screen.
 ![0](https://github.com/user-attachments/assets/f55e4a7c-020f-424f-a255-7f2a63ed5af2)
+
+This is Stage 1 aka the room where I spent most of my lives. The two pink blob enemies and the background share a limited colour palette, and you can see the tile repetition clearly: the same stone wall tile is reused across the entire background, the same candle sconce appears twice in the same frame. The NES only has 2 KB of video RAM, so backgrounds are built from a small set of repeated 8×8 tiles. The SNES has dedicated VRAM for its two PPU chips and can hold far more unique tile data, which is why its environments look varied rather than patterned. The red curtains here are about as visually complex as the NES background layer gets — the SNES equivalent would have multiple independently scrolling layers behind them.
+![castlevaniagameplay](https://github.com/user-attachments/assets/b44256a6-0b5b-438c-b208-a010a785df4c)
+
+I did make it to Stage 2. The blue bat-like enemies at the top of this screen are a good example of the NES sprite system in action. Each one is a small sprite with a two-colour palette, moving in arcs that the CPU has to calculate in software. There is no co-processor handling this; the Ricoh 2A03 at 1.79 MHz is doing all the enemy AI, collision detection, and movement math simultaneously. The staircase geometry here is entirely built from the same tile set as Stage 1, just rearranged, not redrawn. That's the 2 KB VRAM budget at work again. 
+![castlevaniagameplaypart2](https://github.com/user-attachments/assets/cc6fdc03-74b9-46bd-94e5-268b86a5ed48)
+
 
 
 ## Platform 2: Game Boy (Sharp LR35902, 4.19 MHz, 8-bit)
