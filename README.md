@@ -16,6 +16,7 @@ The NES was built around a Ricoh 2A03, which is a custom chip derived from the M
 The NES used strict cartridge-based hardware licensing and a lockout chip (the 10NES) to control what software could run on the platform. There was no general-purpose operating system; the hardware itself handled graphics, sound, and input directly, meaning every cycle of that 1.79 MHz CPU was available to the game. No dedicated co-processor for math, no hardware scaling, no rotation. Everything had to be done in software.
 
 #### What I Played
+`Castlevania (USA).nes` - loaded into FCEUX, launched from the Linux terminal with `fceux`. I am genuinely bad at video games, and Castlevania made sure I knew it. I died repeatedly in Stage 1 before I got far enough to see Stage 2. Most of my time with this game was spent replaying stage 1 again and again.
 
 #### Observations
 
