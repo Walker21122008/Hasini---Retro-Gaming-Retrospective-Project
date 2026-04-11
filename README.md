@@ -21,6 +21,8 @@ The NES used strict cartridge-based hardware licensing and a lockout chip (the 1
 
 #### Observations
 The gothic atmosphere here: the candles, the logo, the lettering, is built entirely from 25 simultaneous colours and 8×8 pixel tiles. Compared to what the SNES title screen does with 256 colours and gradient shading, this looks flat, but it doesn't feel cheap. The NES PPU separates sprites (aka the bats and candles) from background tiles, so the candle flames are sprites flickering over a static tile layer. 
+![0](https://github.com/user-attachments/assets/f55e4a7c-020f-424f-a255-7f2a63ed5af2)
+
 
 ## Platform 2: Game Boy (Sharp LR35902, 4.19 MHz, 8-bit)
  
