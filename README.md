@@ -38,3 +38,7 @@ The NES used strict cartridge-based hardware licensing and a lockout chip (the 1
 #### What I Played
 
 #### Observations
+
+## References
+ 
+- Carleton University School of Computer Science. *Nintendo Entertainment System NES (Original)* [VIN155]. Vintage Computing Collection. https://carleton.ca/scs/vintage-computing/item/vin155/
