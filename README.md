@@ -11,6 +11,7 @@ The three games I traced:
 ### Game Played: Castlevania
  
 #### Hardware Context
+The NES was built around a Ricoh 2A03, which is a custom chip derived from the MOS 6502, running at 1.79 MHz. It had 2 KB of RAM and 2 KB of dedicated video RAM. For graphics, a dedicated Ricoh 2C02 PPU (Picture Processing Unit) handled sprites and backgrounds separately, outputting at 256×240 pixels, but was limited to 25 on-screen colours at a time from a palette of 54, with a maximum of 64 total sprites and only 8 per scanline. Audio was handled by five channels built directly into the 2A03: two pulse waves, a triangle wave, a noise channel, and a DPCM channel for short sampled sounds. [[Carleton University SCS Vintage Computing Collection — VIN155](https://carleton.ca/scs/vintage-computing/item/vin155/)]
 
 #### What I Played
 
