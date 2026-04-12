@@ -34,7 +34,7 @@ This is Stage 1 aka the room where I spent most of my lives. The two pink blob e
 ![castlevaniagameplay](https://github.com/user-attachments/assets/e3f648e6-bbaf-4c36-88b4-4ef6a4bb7709)
 
 Simon Belmont himself is a meta-sprite composed of eight 8x8 tiles arranged in a 2x4 grid. By keeping his width to exactly 16 pixels when expanded(2 tiles), the developers ensured he wouldn't exceed the NES's limit of 8 sprites per scanline too quickly when overlapping with enemies. His color is tied to one of the four hardware sprite palettes, which he often has to share with items and small enemies to keep the game running smoothly. This is shown in the below image:
-<img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (1)" src="https://github.com/user-attachments/assets/07fdade7-2b14-432e-92d1-ae06e6f41c5a" />
+<img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (2)" src="https://github.com/user-attachments/assets/c2a10f7c-2018-44c5-bb15-d5bf58609e8d" />
 
 
 I did make it to Stage 2. The blue bat-like enemies at the top of this screen are a good example of the NES sprite system in action. Each one is a small sprite with a two-colour palette, moving in arcs that the CPU has to calculate in software. There is no co-processor handling this; the Ricoh 2A03 at 1.79 MHz is doing all the enemy actions, which are collision detection and movement math simultaneously. The staircase geometry here is entirely built from the same tile set as Stage 1, just rearranged, not redrawn. That's the 2 KB VRAM budget at work again. 
