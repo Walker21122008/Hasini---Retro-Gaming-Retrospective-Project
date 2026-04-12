@@ -43,6 +43,9 @@ I did make it to Stage 2. The blue bat-like enemies at the top of this screen ar
 <img width="314" height="317" alt="image" src="https://github.com/user-attachments/assets/be3cc3e3-2c1e-44fd-b3a6-ca05dc2f7f12" />
  
 #### Hardware Context
+The Game Boy is built around a single-chip design Nintendo called the **DMG-CPU**, manufactured by Sharp. Inside it is a **Sharp SM83** processor, a hybrid of the Zilog Z80 and Intel 8080 running at **4.19 MHz**. As Rodrigo Copetti's architectural analysis notes, clock speed alone can be deceiving here: the SM83's design means it doesn't always complete instructions as quickly as the raw MHz might suggest. [[Copetti, *Game Boy / Color Architecture*](https://www.copetti.org/writings/consoles/game-boy/)]
+ 
+The Game Boy has **8 KB of RAM**, which is four times what the NES had, but its graphics pipeline is more limited in other ways. The display runs at **160×144 pixels** with only **4 shades of gray**, and due to the green-tinted LCD on the original hardware, the image appears slightly greenish rather than true black and white. All graphics calculations are handled by the CPU, then passed to a dedicated PPU for rendering. Audio has four channels: two pulse waves, a wave channel, and a noise channel, one fewer than the NES, and with no DPCM sample channel at all.
 
 #### What I Played
 
@@ -61,3 +64,4 @@ I did make it to Stage 2. The blue bat-like enemies at the top of this screen ar
 ## References
  
 - Carleton University School of Computer Science. *Nintendo Entertainment System NES (Original)* [VIN155]. Vintage Computing Collection. https://carleton.ca/scs/vintage-computing/item/vin155/
+- Copetti, Rodrigo. *Game Boy / Color Architecture: A Practical Analysis*. https://www.copetti.org/writings/consoles/game-boy/
