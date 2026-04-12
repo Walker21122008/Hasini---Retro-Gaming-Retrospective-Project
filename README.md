@@ -21,7 +21,7 @@ The three games I traced:
 The NES was built around a Ricoh 2A03, which is a custom chip derived from the MOS 6502, running at 1.79 MHz. It had 2 KB of RAM and 2 KB of dedicated video RAM. For graphics, a dedicated Ricoh 2C02 PPU (Picture Processing Unit) handled sprites and backgrounds separately, outputting at 256×240 pixels, but was limited to 25 on-screen colours at a time from a palette of 54, with a maximum of 64 total sprites and only 8 per scanline. Audio was handled by five channels built directly into the 2A03: two pulse waves, a triangle wave, a noise channel, and a DPCM channel for short sampled sounds. [[Carleton University SCS Vintage Computing Collection — VIN155](https://carleton.ca/scs/vintage-computing/item/vin155/)]
 
 The NES used strict cartridge-based hardware licensing and a lockout chip (the 10NES) to control what software could run on the platform. There was no general-purpose operating system; the hardware itself handled graphics, sound, and input directly, meaning every cycle of that 1.79 MHz CPU was available to the game. No dedicated co-processor for math, no hardware scaling, no rotation. Everything had to be done in software.
-<img width="5560" height="3020" alt="NES-Console-Set" src="https://github.com/user-attachments/assets/f2103e25-66cf-4e90-9b43-7ebdbedd4297" />
+<img width="40" height="40" alt="NES-Console-Set" src="https://github.com/user-attachments/assets/f2103e25-66cf-4e90-9b43-7ebdbedd4297" />
 
 
 #### What I Played
