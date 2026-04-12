@@ -40,6 +40,7 @@ I did make it to Stage 2. The blue bat-like enemies at the top of this screen ar
 ## Platform 2: Game Boy (Sharp LR35902, 4.19 MHz, 8-bit)
  
 ### Game Played: Castlevania: The Adventure
+<img width="314" height="317" alt="image" src="https://github.com/user-attachments/assets/be3cc3e3-2c1e-44fd-b3a6-ca05dc2f7f12" />
  
 #### Hardware Context
 
