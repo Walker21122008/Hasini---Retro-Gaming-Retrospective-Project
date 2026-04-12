@@ -53,8 +53,11 @@ Castlevania: The Adventure (1989). This is the first Castlevania on a handheld. 
 
 #### Observations
 The title screen looks noticeably flatter than the NES version, even though the Game Boy came out two years later. That's because the Game Boy's display outputs only four shades of gray on a 160×144 screen compared to the NES's 25 simultaneous colours on a 256×240 display. The NES title screen uses colour contrast to separate the foreground logo from the background. Here, everything has to be communicated through shade alone, and on the original olive-green LCD, even those four shades bleed into each other.
+![gameboyCastlevaniaTitlescreen](https://github.com/user-attachments/assets/6fdfe9f5-948d-4d00-a096-a0dc573ed51d)
 
 This game was super monotone and constricted according to my opinion compared to the NES version. The main character, Christopher Belmont moves slower than Simon Belmont on the NES noticeably, measurably slower even though the Game Boy's CPU runs at 4.19 MHz compared to the NES's 1.79 MHz. The higher clock speed doesn't mean much here because the Game Boy had no dedicated PPU like the NES's Ricoh 2C02. All the rendering work fell back on the main CPU, and in scenes with multiple enemies, the frame rate visibly drops. The character speed was likely tuned down to match what the hardware could sustain. The sub-weapons from the NES which are the crucifix, holy water, bows are gone entirely. The NES managed multiple projectiles onscreen using sprite flickering, but on this small monochrome display that flickering would have been even more distracting than on a colour TV. Removing them was the best call, but it also makes the game feel stripped down compared to what came before.
+![gameboyCastlevanieGameplayScreen](https://github.com/user-attachments/assets/c6449a4d-2adf-46c3-99be-1a676de0bc89)
+
 
 ## Platform 3: SNES (Ricoh 5A22, 3.58 MHz, 16-bit)
 
