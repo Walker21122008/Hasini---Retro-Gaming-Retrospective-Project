@@ -48,6 +48,7 @@ The Game Boy is built around a single-chip design Nintendo called the **DMG-CPU*
 The Game Boy has **8 KB of RAM**, which is four times what the NES had, but its graphics pipeline is more limited in other ways. The display runs at **160×144 pixels** with only **4 shades of gray**, and due to the green-tinted LCD on the original hardware, the image appears slightly greenish rather than true black and white. All graphics calculations are handled by the CPU, then passed to a dedicated PPU for rendering. Audio has four channels: two pulse waves, a wave channel, and a noise channel, one fewer than the NES, and with no DPCM sample channel at all.
 
 #### What I Played
+Castlevania: The Adventure (1989). This is the first Castlevania on a handheld. I played through all four stages. I also briefly tried Castlevania II: Belmont's Revenge (1991) for comparison - it is notably better, and that comparison ended up being useful.
 
 #### Observations
 
