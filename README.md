@@ -68,6 +68,9 @@ This game was super monotone and constricted according to my opinion compared to
 ### Game Played: Super Castlevania IV
  
 #### Hardware Context
+The SNES is built around the **Ricoh 5A22**, a customised version of the WDC 65C816 — a 16-bit extension of the same 6502 family the NES used. As Rodrigo Copetti's architectural analysis notes, the CPU runs at a **variable clock speed**, reaching up to **3.58 MHz** for register operations but dropping to **1.79 MHz** when accessing slower buses. That ceiling of 3.58 MHz is only marginally faster than the NES's 1.79 MHz, and Copetti points out the 65C816's design is "excessively cumbersome for little gain" compared to competing chips of the era. [[Copetti, *Super Nintendo / Famicom Architecture*](https://www.copetti.org/writings/consoles/super-nintendo/)]
+ 
+Ricoh added dedicated **multiplication and division units** directly to the 5A22, since the base 65C816 lacked these instructions entirely. Two **DMA (Direct Memory Access) units** allow data to move around memory without interrupting the CPU. Two dedicated **PPU chips** handle all graphics, enabling hardware-level scaling, rotation, and multiple background layer modes — Mode 7 being the most famous. A separate **Sony SPC700 audio chip** runs its own processor with 64 KB of dedicated RAM, handling 8-channel stereo sound with full sample playback. The colour palette allows 32,768 possible colours with 256 displayable simultaneously compared to the NES's 54-colour master palette and 25 on screen at once, and the Game Boy's 4 shades of gray.
 
 #### What I Played
 
@@ -77,3 +80,5 @@ This game was super monotone and constricted according to my opinion compared to
  
 - Carleton University School of Computer Science. *Nintendo Entertainment System NES (Original)* [VIN155]. Vintage Computing Collection. https://carleton.ca/scs/vintage-computing/item/vin155/
 - Copetti, Rodrigo. *Game Boy / Color Architecture: A Practical Analysis*. https://www.copetti.org/writings/consoles/game-boy/
+- Copetti, Rodrigo. *Super Nintendo / Famicom Architecture: A Practical Analysis*. https://www.copetti.org/writings/consoles/super-nintendo/
+ 
