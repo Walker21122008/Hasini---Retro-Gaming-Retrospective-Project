@@ -6,6 +6,16 @@ I picked the Castlevania franchise because I'd heard of it when I was younger
  
 What I didn't expect was how much the visuals would differ across the three versions. That ended up becoming the focus of this retrospective, which is what the game looks like and why it looks so different on each platform. The NES, Game Boy, and SNES each have hard limits on how many colours they can display, how many sprites they can draw per scanline, and how much video memory they have to work with. They show up directly in what appears on screen, and Castlevania makes those differences very visible because the same castle, the same enemies, and the same character have to be drawn within completely different constraints on each system.
 
+Three main things I am going to focus on: 
+- **Color Palettes**  
+  How each platform handles color limitations (NES’s restricted palette, Game Boy’s grayscale tones, SNES’s expanded color range) and how that affects mood and detail.
+
+- **Tile & Sprite Sizing**  
+  Differences in tile sizes and sprite dimensions used to build characters and environments, and how this impacts character detail and animation.
+
+- **Sprite Rendering Constraints**  
+  Limits on how many sprites can appear per scanline and overall memory usage, influencing flickering, layering, and on-screen complexity.
+
 The three games I traced:
  
 - **Castlevania** (NES, 1987) - the original. Simon Belmont, a whip, a castle, and Dracula.
