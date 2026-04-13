@@ -22,35 +22,60 @@ The three games I traced:
 - **Castlevania: The Adventure** (Game Boy, 1989) - the first portable entry, released the same year as the Game Boy itself.
 - **Super Castlevania IV** (SNES, 1991) - the 16-bit reimagining. Widely considered one of the best games on the system.
 
-## Platform 1: NES (Ricoh 2A03, 1.79 MHz, 8-bit)
-
-### Game Played: Castlevania
-<img width="270" height="368" alt="image" src="https://github.com/user-attachments/assets/36858aee-9cda-44b3-9c09-302f77841510" />
+---
  
-#### Hardware Context
-The NES was built around a Ricoh 2A03, which is a custom chip derived from the MOS 6502, running at 1.79 MHz. It had 2 KB of RAM and 2 KB of dedicated video RAM. For graphics, a dedicated Ricoh 2C02 PPU (Picture Processing Unit) handled sprites and backgrounds separately, outputting at 256×240 pixels, but was limited to 25 on-screen colours at a time from a palette of 54, with a maximum of 64 total sprites and only 8 per scanline. Audio was handled by five channels built directly into the 2A03: two pulse waves, a triangle wave, a noise channel, and a DPCM channel for short sampled sounds. [[Carleton University SCS Vintage Computing Collection — VIN155](https://carleton.ca/scs/vintage-computing/item/vin155/)]
+## 1. Colour Palettes
+ 
+*How each platform handles colour limitations and how that affects mood and visual detail.*
+ 
+---
+ 
+### NES
+ 
+**Hardware:** The Ricoh 2C02 PPU outputs at 256×240 pixels with a fixed master palette of 54 colours, of which only 25 can appear on screen simultaneously. Backgrounds get 13 colour slots (four sub-palettes of 3 colours each plus one shared background colour) and sprites get 12 (four sub-palettes of 3 plus transparency). [[Carleton University SCS Vintage Computing Collection — VIN155](https://carleton.ca/scs/vintage-computing/item/vin155/)]
+ 
+**What I played:** `Castlevania (USA).nes` — loaded into FCEUX, launched from the terminal with `fceux`. Died repeatedly in Stage 1 and barely saw Stage 2.
 
-The NES used strict cartridge-based hardware licensing and a lockout chip (the 10NES) to control what software could run on the platform. There was no general-purpose operating system; the hardware itself handled graphics, sound, and input directly, meaning every cycle of that 1.79 MHz CPU was available to the game. No dedicated co-processor for math, no hardware scaling, no rotation. Everything had to be done in software.
-<img width="500" height="500" alt="NES-Console-Set" src="https://github.com/user-attachments/assets/f2103e25-66cf-4e90-9b43-7ebdbedd4297" />
+ Soon to be image
+ 
+The title screen is mostly black, and that's a colour budget decision. With only 25 colours available simultaneously, Konami kept the background empty to spend those slots on the logo, the red banner, the purple outline, the orange castle, and the gray border tiles. That's already most of the palette used up on the title screen alone. Every colour is a deliberate trade-off — there is no room to fill the background with anything without displacing something else.
+ 
+Soon to be image
 
-#### What I Played
-`Castlevania (USA).nes` - loaded into FCEUX, launched from the Linux terminal with `fceux`. I am genuinely bad at video games, and Castlevania made sure I knew it. I died repeatedly in Stage 1 before I got far enough to see Stage 2. Most of my time with this game was spent replaying stage 1 again and again.
+In-game the colour budget is even tighter. The pink blob enemies, the red curtains, and the stained glass windows all share palette slots with each other and the background. The NES forces a single palette onto every 16×16 pixel area of the background — meaning if two differently coloured objects sit within the same 16×16 block, one colour wins and the other gets dropped. This is called attribute clash, and it's visible throughout the stage wherever objects of different colours sit close together.
 
-#### Observations
-The background is pure black. The NES can only show 25 colours at once, so Konami spent those slots on the logo and left the background empty. You can count the colours used: green logo, red banner, purple outline, orange castle, gray borders. That's most of the palette already gone on just the title screen. When I counted it, I found that about 13 colours were used from the colour palette, so Konami did not use the remaining 12 colours.
-![0](https://github.com/user-attachments/assets/f55e4a7c-020f-424f-a255-7f2a63ed5af2)
+---
+ 
+### Game Boy
+ 
+**Hardware:** The Game Boy display outputs at 160×144 pixels with exactly 4 shades of gray — no colour at all. On the original hardware, those shades appear on a green-tinted LCD, so the image looks slightly olive rather than true black and white. Every 8×8 pixel tile is limited to these four shades, and one shade in every sprite palette must be reserved for transparency so sprites don't appear as solid blocks. [[Copetti, *Game Boy / Color Architecture*](https://www.copetti.org/writings/consoles/game-boy/)]
+ 
+**What I played:** `Castlevania - The Adventure (USA).gb` — loaded into mGBA (`mgba-qt`). Found it easier to survive than the NES version, but it felt stripped down.
+ 
+soon to be
 
-This is Stage 1 aka the room where I spent most of my lives. The two pink blob enemies and the background share a limited colour palette, and you can see the tile repetition clearly: the same stone wall tile is reused across the entire background, the same candle sconce appears twice in the same frame. The NES only has 2 KB of video RAM, so backgrounds are built from a small set of repeated 8×8 tiles . The SNES has dedicated VRAM for its two PPU chips and can hold far more unique tile data, which is why its environments look varied rather than patterned.  Because the system is limited to a small pattern table of 256 unique background tiles, developers used 16x16 "metatiles" to create the repeating stone walls and floor blocks, maximizing the 2 KB of layout RAM. The "pink" color shared by the zombies and the background is a result of the Attribute Table, which forces 16x16 pixel areas to share one of only four available palettes.
-![castlevaniagameplay](https://github.com/user-attachments/assets/e3f648e6-bbaf-4c36-88b4-4ef6a4bb7709)
+The title screen is the clearest colour comparison between platforms. The NES title uses a black background with a green logo and red banner — colour contrast doing the work of separating elements. Here there is no colour contrast. Everything is communicated through shade alone. Konami chose a white background with a black logo because those are the two most distinct shades available; there is no option for a coloured logo or a coloured banner. The gothic lettering uses thick outlines for the same reason — on a four-shade display, outlines are the only reliable way to make a foreground element read against a background that might be a similar shade.
+ 
+soon to be
 
-Simon Belmont himself is a meta-sprite composed of eight 8x8 tiles arranged in a 2x4 grid. By keeping his width to exactly 16 pixels when expanded(2 tiles), the developers ensured he wouldn't exceed the NES's limit of 8 sprites per scanline too quickly when overlapping with enemies. His color is tied to one of the four hardware sprite palettes, which he often has to share with items and small enemies to keep the game running smoothly. This is shown in the below image:
-<img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (2)" src="https://github.com/user-attachments/assets/c2a10f7c-2018-44c5-bb15-d5bf58609e8d" />
+In gameplay the lack of colour creates genuine readability problems. The skeleton enemy in the center of this screenshot blends into the background columns and mountain silhouette — they're all rendered in similar shades of gray. On the NES, colour contrast separates enemies from backgrounds automatically: orange bricks read as floor, gray stone as wall, pink enemies as threats. The Game Boy has no such shortcut. Distinguishing platforms from hazards from enemies requires more active attention here than it ever did on the NES.
+ 
+---
+ 
+### SNES
+ 
+**Hardware:** The SNES can display 256 colours simultaneously from a master palette of 32,768. Two dedicated PPU chips handle all graphics output, enabling colour blending, gradients, and transparency effects that neither the NES nor Game Boy could produce. [[Copetti, *Super Nintendo / Famicom Architecture*](https://www.copetti.org/writings/consoles/super-nintendo/)]
+ 
+**What I played:** `Super Castlevania IV` — loaded into Snes9x. Made it through the first several stages.
+ 
+soon to be
 
+The SNES title screen uses colour in ways the NES and Game Boy simply cannot. The logo has shading and depth — multiple tones blending across the same letterform. The background is not flat black like the NES version; it has tonal variation. The candles animate with smooth gradients. This is what 256 simultaneous colours from a palette of 32,768 looks like compared to 25 from 54, or four shades of gray. The mood is darker and more atmospheric because the palette can actually render shadow and depth, not just flat blocks of colour.
+ 
+soon to be 
 
-I did make it to Stage 2. The blue bat-like enemies at the top of this screen are a good example of the NES sprite system in action. Each one is a small sprite with a two-colour palette, moving in arcs that the CPU has to calculate in software. There is no co-processor handling this; the Ricoh 2A03 at 1.79 MHz is doing all the enemy actions, which are collision detection and movement math simultaneously. The staircase geometry here is entirely built from the same tile set as Stage 1, just rearranged, not redrawn. That's the 2 KB VRAM budget at work again. 
-![castlevaniagameplaypart2](https://github.com/user-attachments/assets/cc6fdc03-74b9-46bd-94e5-268b86a5ed48)
-
-
+In gameplay the expanded palette means environments have texture and mood rather than flat colour blocks. The stonework has highlight and shadow built into the tiles themselves. The background layers use slightly different colour values to create depth — something the NES's single background layer and 25-colour limit couldn't support. The visual complexity here isn't just about having more colours; it's about being able to use gradients and shading to imply three-dimensionality in a 2D game.
+ 
 
 ## Platform 2: Game Boy (Sharp LR35902, 4.19 MHz, 8-bit)
  
