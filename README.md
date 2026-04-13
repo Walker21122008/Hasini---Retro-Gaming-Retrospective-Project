@@ -66,7 +66,7 @@ This game was super monotone and constricted according to my opinion compared to
 ## Platform 3: SNES (Ricoh 5A22, 3.58 MHz, 16-bit)
 
 ### Game Played: Super Castlevania IV
-<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/d1561301-862a-45df-ab20-c723cf133dac" />
+<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d1561301-862a-45df-ab20-c723cf133dac" />
 
  
 #### Hardware Context
