@@ -39,9 +39,9 @@ Here you can see the title screen in all the three devices.
  
 **What I played:** `Castlevania (USA).nes` — loaded into FCEUX, launched from the terminal with `fceux`. Died repeatedly in Stage 1 and barely saw Stage 2.
 
- Soon to be image
- 
-The title screen is mostly black, and that's a colour budget decision. With only 25 colours available simultaneously, Konami kept the background empty to spend those slots on the logo, the red banner, the purple outline, the orange castle, and the gray border tiles. That's already most of the palette used up on the title screen alone. Every colour is a deliberate trade-off — there is no room to fill the background with anything without displacing something else.
+ <img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (4)" src="https://github.com/user-attachments/assets/ae917bfa-c88d-4016-9f35-e4dce0b93879" />
+
+The Castlevania title screen uses only 10 colors because it is rendered entirely as a single background layer, which is hardware-limited to a maximum of 13 colors (four 3-color palettes plus one shared background color). The theoretical maximum of 25 colors on the NES is only achievable when 12 additional colors are provided by moving sprites; however, since this title screen contains no active sprite objects, that entire half of the system's color capacity remains inaccessible. Technical documentation of the NES Picture Processing Unit (PPU) confirms this "background vs. sprite" split, and ROM analysis shows the artists further limited themselves to 10 colors to avoid visual "clashing" at the borders of the mandatory 16x16 pixel attribute grid. [NES Dev Wiki]
  
 Soon to be image
 
@@ -121,4 +121,6 @@ Ricoh added dedicated **multiplication and division units** directly to the 5A22
 - Carleton University School of Computer Science. *Nintendo Entertainment System NES (Original)* [VIN155]. Vintage Computing Collection. https://carleton.ca/scs/vintage-computing/item/vin155/
 - Copetti, Rodrigo. *Game Boy / Color Architecture: A Practical Analysis*. https://www.copetti.org/writings/consoles/game-boy/
 - Copetti, Rodrigo. *Super Nintendo / Famicom Architecture: A Practical Analysis*. https://www.copetti.org/writings/consoles/super-nintendo/
+- NESdev Wiki. PPU Palettes. https://www.nesdev.org/wiki/PPU_palettes
+
  
