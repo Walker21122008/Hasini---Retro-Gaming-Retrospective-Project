@@ -29,6 +29,9 @@ The three games I traced:
 *How each platform handles colour limitations and how that affects mood and visual detail.*
  
 ---
+
+<img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (3)" src="https://github.com/user-attachments/assets/f450bce7-5d5a-4ecc-8df9-230bce3f7b83" />
+Here you can see the title screen in all the three devices.
  
 ### NES
  
