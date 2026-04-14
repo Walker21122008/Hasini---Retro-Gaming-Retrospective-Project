@@ -51,20 +51,6 @@ When I was playing the game, I was pretty astonished about how the artists where
 Simon Belmont's sprite design is a masterclass in efficiency, utilizing just three colors—tan, brown, and red—plus a transparency channel to fit the NES's strict palette rules (All spries must have only three colors). To bypass these limits, artists used a technique called "open outlining," where the black background of the castle "bleeds" into his silhouette to act as a faked fourth color for his hair and boots. Simon Belmont's vibrant red tunic provides high contrast against the cool, dark blues of the environment to ensure he remains the focal point. Furthermore, to prevent the whip from exceeding the three-colour limit, the game renders it as a separate sprite using its own dedicated palette, allowing the weapon to appear in different shades (like light purple and white) without interfering with Simon’s primary character colors.
 <img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (6)" src="https://github.com/user-attachments/assets/278fc135-4002-45c0-8f5b-d49a614b019b" />
 
-| Category | 🎮 NES | 🟢 Game Boy | 🟣 SNES |
-|---|---|---|---|
-| **Title Screen - Colour Count** | 10 colours (background layer only; no active sprites to access the 12 sprite-palette slots) | 4 shades of grey (monochrome only) | Hundreds of colour variations from the 256-simultaneous palette |
-| **Title Screen - Key Technique** | Artists self-limited to 10 colours to avoid visual clashing at the mandatory 16×16 attribute grid borders | Advanced dithering (checkerboard + stippling) simulates stone texture and logo shading without hue | Smooth gradients, hardware alpha blending, and translucent fog effects impossible on earlier hardware |
-| **Title Screen — Mood** | Stark and flat; gothic atmosphere achieved through high contrast alone | Grittier and more weathered than NES; premium legibility prioritised over colour | Tactile and three-dimensional; the first entry to feel cinematic |
-| **Gameplay Screen - Depth Strategy** | Distinct hues separate layers: deep blues/blacks for background, vibrant greens/oranges for foreground; dithering simulates gradients on castle walls | "Layered" shading: lightest shade = sky, mid-tones + vertical dithering = trees, darkest blacks = sprites | Sub-palette mixing creates seamless purple-to-black sky gradients; 16 colours per tile allow organic rock/moss textures within a single 8×8 block |
-| **Gameplay Screen = Key Limitation** | Hard colour boundaries at every 16×16 attribute block | All elements share the same four greys — sprites frequently blend into mid-ground tiles of matching tone | None meaningful; hardware alpha blending produces translucent vine-and-fog layers |
-| **Gameplay Screen - Mood** | Clear, readable depth; each layer identifiable at a glance | Texture-heavy but flat; depth comes from outline weight, not colour | Volumetric and atmospheric; the environment feels three-dimensional for the first time in the series |
-| **Main Character - Colours Used** | 3 colours (tan, brown, red) + transparency | 2 effective shades (light grey + black), avoiding muddy middle greys ("palette flattening") | Full 16-colour palette with colour ramping for specular highlights |
-| **Main Character - Key Technique** | **Open outlining** — the dark castle background bleeds into the silhouette as a faked 4th colour for hair and boots | **Safety simplicity** — solid blocks + thick black outlines designed to survive the screen's slow refresh rate and motion blur | **Colour ramping** — graduated hues simulate the glint of moonlight on metallic armour and leather; subtle anti-aliased shading replaces thick safety outlines |
-| **Main Character - Weapon** | Whip rendered as a *separate sprite* on its own palette (light purple + white) to avoid exceeding the 3-colour limit | Whip simplified to match the same constrained palette as the character | Whip is a multi-jointed object with its own colour depth, enabling fluid motion and metallic texture without hardware flickering |
-| **Main Character - Readability** | High — red tunic provides strong contrast against cool-blue environment | Medium — thick outlines maintain silhouette under motion, but character merges into similarly-shaded mid-ground at rest | High — warm-to-cool hue contrast pops the character against purple backgrounds naturally |
-| **Defining Artistic Technique** | Open Outlining | Palette Flattening + Dithering | Alpha Blending + Colour Ramping |
-
 ---
  
 ### Game Boy (Castlevania: The Adventure)
@@ -103,42 +89,14 @@ Super Castlevania IV utilizes the SNES's dual Picture Processing Units (PPUs) to
 The SNES design of Simon Belmont represents a massive leap in pixel anatomy, moving from the NES's three-color "metasprite" to a rich 16-color palette that enables realistic material physics. This expanded range allows for color ramping to simulate the glint of moonlight on metallic armor and leather through specular highlights—a technique impossible under the "palette poverty" of the 8-bit era. Unlike the "palette flattening" and thick safety outlines required on the Game Boy to combat motion blur, the SNES sprite uses subtle anti-aliased shading and warm-to-cool hue contrast to pop against the purple backgrounds. Furthermore, the whip is no longer a solid-colored overlay but a complex, multi-jointed object with its own color depth, allowing for fluid motion and metallic textures that would have caused massive hardware flickering on previous systems.
 <img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (12)" src="https://github.com/user-attachments/assets/29eb7743-e51f-47ad-bc98-2f46cc289d8e" />
 
- 
-
-## Platform 2: Game Boy (Sharp LR35902, 4.19 MHz, 8-bit)
- 
-### Game Played: Castlevania: The Adventure
- 
-#### Hardware Context
-The Game Boy is built around a single-chip design Nintendo called the **DMG-CPU**, manufactured by Sharp. Inside it is a **Sharp SM83** processor, a hybrid of the Zilog Z80 and Intel 8080 running at **4.19 MHz**. As Rodrigo Copetti's architectural analysis notes, clock speed alone can be deceiving here: the SM83's design means it doesn't always complete instructions as quickly as the raw MHz might suggest. [[Copetti, *Game Boy / Color Architecture*](https://www.copetti.org/writings/consoles/game-boy/)]
- 
-The Game Boy has **8 KB of RAM**, which is four times what the NES had, but its graphics pipeline is more limited in other ways. The display runs at **160×144 pixels** with only **4 shades of gray**, and due to the green-tinted LCD on the original hardware, the image appears slightly greenish rather than true black and white. All graphics calculations are handled by the CPU, then passed to a dedicated PPU for rendering. Audio has four channels: two pulse waves, a wave channel, and a noise channel, one fewer than the NES, and with no DPCM sample channel at all.
-
-#### What I Played
-`Castlevania - The Adventure(USA).gb` - This is the first Castlevania on a handheld. I played through all four stages. I also briefly tried Castlevania II: Belmont's Revenge (1991) for comparison - it is notably better, and that comparison ended up being useful.
-
-#### Observations
-The title screen looks noticeably flatter than the NES version, even though the Game Boy came out two years later. That's because the Game Boy's display outputs only four shades of gray on a 160×144 screen compared to the NES's 25 simultaneous colours on a 256×240 display. The NES title screen uses colour contrast to separate the foreground logo from the background. Here, everything has to be communicated through shade alone, and on the original olive-green LCD, even those four shades bleed into each other.
-![gameboyCastlevaniaTitlescreen](https://github.com/user-attachments/assets/6fdfe9f5-948d-4d00-a096-a0dc573ed51d)
-
-This game was super monotone and constricted according to my opinion compared to the NES version. The main character, Christopher Belmont moves slower than Simon Belmont on the NES noticeably, measurably slower even though the Game Boy's CPU runs at 4.19 MHz compared to the NES's 1.79 MHz. The higher clock speed doesn't mean much here because the Game Boy had no dedicated PPU like the NES's Ricoh 2C02. All the rendering work fell back on the main CPU, and in scenes with multiple enemies, the frame rate visibly drops. The character speed was likely tuned down to match what the hardware could sustain. The sub-weapons from the NES which are the crucifix, holy water, bows are gone entirely. The NES managed multiple projectiles onscreen using sprite flickering, but on this small monochrome display that flickering would have been even more distracting than on a colour TV. Removing them was the best call, but it also makes the game feel stripped down compared to what came before.
-![gameboyCastlevanieGameplayScreen](https://github.com/user-attachments/assets/c6449a4d-2adf-46c3-99be-1a676de0bc89)
-
-
-## Platform 3: SNES (Ricoh 5A22, 3.58 MHz, 16-bit)
-
-### Game Played: Super Castlevania IV
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/d1561301-862a-45df-ab20-c723cf133dac" />
-
- 
-#### Hardware Context
-The SNES is built around the **Ricoh 5A22**, a customised version of the WDC 65C816 — a 16-bit extension of the same 6502 family the NES used. As Rodrigo Copetti's architectural analysis notes, the CPU runs at a **variable clock speed**, reaching up to **3.58 MHz** for register operations but dropping to **1.79 MHz** when accessing slower buses. That ceiling of 3.58 MHz is only marginally faster than the NES's 1.79 MHz, and Copetti points out the 65C816's design is "excessively cumbersome for little gain" compared to competing chips of the era. [[Copetti, *Super Nintendo / Famicom Architecture*](https://www.copetti.org/writings/consoles/super-nintendo/)]
- 
-Ricoh added dedicated **multiplication and division units** directly to the 5A22, since the base 65C816 lacked these instructions entirely. Two **DMA (Direct Memory Access) units** allow data to move around memory without interrupting the CPU. Two dedicated **PPU chips** handle all graphics, enabling hardware-level scaling, rotation, and multiple background layer modes — Mode 7 being the most famous. A separate **Sony SPC700 audio chip** runs its own processor with 64 KB of dedicated RAM, handling 8-channel stereo sound with full sample playback. The colour palette allows 32,768 possible colours with 256 displayable simultaneously compared to the NES's 54-colour master palette and 25 on screen at once, and the Game Boy's 4 shades of gray.
-
-#### What I Played
-
-#### Observations
+| Category | 🎮 NES | 🟢 Game Boy | 🟣 SNES |
+|---|---|---|---|
+| **Title Screen - Colour Count** | 10 colours (background layer only; no active sprites to access the 12 sprite-palette slots) | 4 shades of grey (monochrome only) | Hundreds of colour variations from the 256-simultaneous palette |
+| **Title Screen - Key Technique** | Artists self-limited to 10 colours to avoid visual clashing at the mandatory 16×16 attribute grid borders | Advanced dithering (checkerboard + stippling) simulates stone texture and logo shading without hue | Smooth gradients, hardware alpha blending, and translucent fog effects impossible on earlier hardware |
+| **Gameplay Screen = Key Limitation** | Hard colour boundaries at every 16×16 attribute block | All elements share the same four greys — sprites frequently blend into mid-ground tiles of matching tone | None meaningful; hardware alpha blending produces translucent vine-and-fog layers |
+| **Gameplay Screen - Mood** | Clear, readable depth; each layer identifiable at a glance | Texture-heavy but flat; depth comes from outline weight, not colour | Volumetric and atmospheric; the environment feels three-dimensional for the first time in the series |
+| **Main Character - Colours Used** | 3 colours (tan, brown, red) + transparency | 2 effective shades (light grey + black), avoiding muddy middle greys ("palette flattening") | Full 16-colour palette with colour ramping for specular highlights |
+| **Main Character - Weapon** | Whip rendered as a *separate sprite* on its own palette (light purple + white) to avoid exceeding the 3-colour limit | Whip simplified to match the same constrained palette as the character | Whip is a multi-jointed object with its own colour depth, enabling fluid motion and metallic texture without hardware flickering |
 
 ## References
  
