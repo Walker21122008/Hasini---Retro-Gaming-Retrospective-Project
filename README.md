@@ -109,7 +109,9 @@ The SNES design of Simon Belmont represents a massive leap in pixel anatomy, mov
 ### NES (Castlevania)
 
 
-**Hardware:**
+**Hardware:** The NES Picture Processing Unit, the Ricoh 2C02, renders everything from one fundamental unit: the 8×8 pixel tile which is every background, wall, and floor is assembled from these fixed blocks, stored in memory as Pattern Tables (CHR).
+- Each tile costs 16 bytes across two bitplanes, giving each pixel one of four values that index into a colour sub-palette [NESDev Wiki — PPU Pattern Tables]
+- Backgrounds are laid out on a 32×30 nametable (960 tiles mapping exactly to the 256×240 screen), but colour is assigned per 2×2 tile group via the Attribute Table meaning colour boundaries are locked to 16-pixel intervals and two adjacent tiles sharing an attribute cell cannot be coloured independently [NESDev Wiki — PPU Nametables]
 
 ## References
  
