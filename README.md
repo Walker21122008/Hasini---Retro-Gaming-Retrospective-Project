@@ -98,6 +98,19 @@ The SNES design of Simon Belmont represents a massive leap in pixel anatomy, mov
 | **Main Character - Colours Used** | 3 colours (tan, brown, red) + transparency | 2 effective shades (light grey + black), avoiding muddy middle greys ("palette flattening") | Full 16-colour palette with colour ramping for specular highlights |
 | **Main Character - Weapon** | Whip rendered as a *separate sprite* on its own palette (light purple + white) to avoid exceeding the 3-colour limit | Whip simplified to match the same constrained palette as the character | Whip is a multi-jointed object with its own colour depth, enabling fluid motion and metallic texture without hardware flickering |
 
+---
+ 
+## 2. Tile and Sprite Sizing
+ 
+*Differences in tile sizes and sprite dimensions used to build characters and environments*
+ 
+---
+
+### NES (Castlevania)
+
+
+**Hardware:**
+
 ## References
  
 - Carleton University School of Computer Science. *Nintendo Entertainment System NES (Original)* [VIN155]. Vintage Computing Collection. https://carleton.ca/scs/vintage-computing/item/vin155/
