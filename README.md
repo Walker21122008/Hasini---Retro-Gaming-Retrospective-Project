@@ -42,10 +42,13 @@ Here you can see the title screen in all the three devices.
  <img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (4)" src="https://github.com/user-attachments/assets/ae917bfa-c88d-4016-9f35-e4dce0b93879" />
 
 The Castlevania title screen uses only 10 colors because it is rendered entirely as a single background layer, which is hardware-limited to a maximum of 13 colors (four 3-color palettes plus one shared background color). The theoretical maximum of 25 colors on the NES is only achievable when 12 additional colors are provided by moving sprites; however, since this title screen contains no active sprite objects, that entire half of the system's color capacity remains inaccessible. Technical documentation of the NES Picture Processing Unit (PPU) confirms this "background vs. sprite" split, and ROM analysis shows the artists further limited themselves to 10 colors to avoid visual "clashing" at the borders of the mandatory 16x16 pixel attribute grid. [NES Dev Wiki]
- 
-Soon to be image
 
-In-game the colour budget is even tighter. The pink blob enemies, the red curtains, and the stained glass windows all share palette slots with each other and the background. The NES forces a single palette onto every 16×16 pixel area of the background — meaning if two differently coloured objects sit within the same 16×16 block, one colour wins and the other gets dropped. This is called attribute clash, and it's visible throughout the stage wherever objects of different colours sit close together.
+The setting’s palette leverages the NES’s background limitations to create a somber, gothic atmosphere, using deep blues and blacks to represent a moonlit night while saving vibrant greens and oranges for foreground foliage and structures. Because the background is restricted to four 3-color palettes, the artists used dithering (checkerboard pixel patterns) to simulate gradients and textures on the castle walls. 
+ 
+<img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (5)" src="https://github.com/user-attachments/assets/d4c0e132-a49a-40ad-98eb-ed27cdbeb3cc" />
+
+Simon Belmont's sprite design is a masterclass in efficiency, utilizing just three colors—tan, brown, and red—plus a transparency channel to fit the NES's strict palette rules (All spries must have only three colors). To bypass these limits, artists used a technique called "open outlining," where the black background of the castle "bleeds" into his silhouette to act as a faked fourth color for his hair and boots. Structurally, Simon is a metasprite built from multiple 8x8 tiles, his vibrant red tunic provides high contrast against the cool, dark blues of the environment to ensure he remains the focal point. Furthermore, to prevent the whip from exceeding the three-colour limit, the game renders it as a separate sprite using its own dedicated palette, allowing the weapon to appear in different shades (like light purple and white) without interfering with Simon’s primary character colors.
+<img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (6)" src="https://github.com/user-attachments/assets/278fc135-4002-45c0-8f5b-d49a614b019b" />
 
 ---
  
