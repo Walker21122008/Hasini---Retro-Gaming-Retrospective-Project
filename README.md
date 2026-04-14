@@ -2,7 +2,7 @@
 
 ## Introduction
  
-I picked the Castlevania franchise because I'd heard of it when I was younger
+Personally, I am not a huge gamer, unfortunately, and the only game I have played, which was a retro game, was the multiple series of Pac-Man. So, I was thinking about choosing that initially. During my research through all the possible games, I came across Castlevania and fell in love with the series since it felt like the inverse of my favourite movie series, Hotel Transylvania.
  
 What I didn't expect was how much the visuals would differ across the three versions. That ended up becoming the focus of this retrospective, which is what the game looks like and why it looks so different on each platform. The NES, Game Boy, and SNES each have hard limits on how many colours they can display, how many sprites they can draw per scanline, and how much video memory they have to work with. They show up directly in what appears on screen, and Castlevania makes those differences very visible because the same castle, the same enemies, and the same character have to be drawn within completely different constraints on each system.
 
