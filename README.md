@@ -71,9 +71,6 @@ In this gameplay shot of Castlevania: The Adventure, the four-shade monochrome p
 While Christopher Belmont’s sprite in The Adventure looks "bland" by modern standards, its design was a calculated response to the Game Boy's motion blur and low contrast. To prevent the character from becoming an unreadable smudge due to the screen’s slow refresh rate, Konami utilized "safety simplicity," avoiding fine internal lines in favor of solid blocks of light grey and thick, dark-black outlines that maintain a clear silhouette. This required a "palette flattening" strategy, where artists bypassed the muddy middle-grey shades to use only the extremes, resulting in a flat, paper-cutout appearance. Consequently, the character seems to merge into the background, as both the hero and the environment must share the same limited four-shade palette. Because there are no distinct colors to separate the layers, the sprite often becomes visually entangled with similarly shaded mid-ground elements like the dithered trees, forcing the player to rely on the thick black outline as the only consistent anchor against the environmental detail.
 <img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (9)" src="https://github.com/user-attachments/assets/91500965-01b3-49e7-99ba-202bb723dc68" />
 
-
-
- 
 ---
  
 ### SNES
@@ -82,13 +79,11 @@ While Christopher Belmont’s sprite in The Adventure looks "bland" by modern st
  
 **What I played:** `Super Castlevania IV` — loaded into Snes9x. Made it through the first several stages.
  
-soon to be
+With a massive jump to 256 simultaneous colors out of a master palette of 32,768, Super Castlevania IV completely removes the color restrictions that defined the earlier series entries. This expanded range allows the title screen to feature complex gradients and subtle shading on the stone wall—using dozens of variations of purple, grey, and green—that were impossible on the NES, which was limited to just 13 background colors. While the Game Boy relied on a flat, four-shade monochrome palette and the NES used high-contrast "blocks" of color to define depth, the SNES uses its dual Picture Processing Units to enable smooth transparency and lighting effects. The result is a richly detailed, atmospheric scene where the vines and metallic logo feel tactile and three-dimensional, a stark evolution from the gritty dithering of the handheld version and the simplified primary colors of the 8-bit era  
 
-The SNES title screen uses colour in ways the NES and Game Boy simply cannot. The logo has shading and depth — multiple tones blending across the same letterform. The background is not flat black like the NES version; it has tonal variation. The candles animate with smooth gradients. This is what 256 simultaneous colours from a palette of 32,768 looks like compared to 25 from 54, or four shades of gray. The mood is darker and more atmospheric because the palette can actually render shadow and depth, not just flat blocks of colour.
- 
-soon to be 
+<img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (10)" src="https://github.com/user-attachments/assets/f837e242-a9a7-4e7c-9715-40d9dda05aee" />
 
-In gameplay the expanded palette means environments have texture and mood rather than flat colour blocks. The stonework has highlight and shadow built into the tiles themselves. The background layers use slightly different colour values to create depth — something the NES's single background layer and 25-colour limit couldn't support. The visual complexity here isn't just about having more colours; it's about being able to use gradients and shading to imply three-dimensionality in a 2D game.
+Super Castlevania IV utilizes the SNES's dual Picture Processing Units (PPUs) to revolutionize gothic environmental storytelling through advanced color depth and math. Unlike the 8-bit era's flat fills, the background uses a sub-palette mixing technique to create a seamless deep purple-to-black gradient, simulating a vast, moonlit sky without the "staircase" banding typical of the NES's attribute limits. By leveraging the 16-color-per-tile capacity, artists applied high-density color indexing to rock formations and the mossy "skull," layering dozens of grey and green values within a single 8x8 block to create organic textures like weathered stone and decaying flora. Most impressively, the game employs hardware-level alpha blending on the hanging vines and distant skull, mathematically calculating the average value between overlapping layers to produce a translucent "fog" effect. This layering creates a cinematic, three-dimensional atmosphere that makes the environment feel like a continuous, living space rather than a collection of static tiles.
  
 
 ## Platform 2: Game Boy (Sharp LR35902, 4.19 MHz, 8-bit)
