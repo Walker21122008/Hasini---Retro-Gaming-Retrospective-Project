@@ -111,11 +111,17 @@ The SNES design of Simon Belmont represents a massive leap in pixel anatomy, mov
 - Each tile costs 16 bytes across two bitplanes, giving each pixel one of four values that index into a colour sub-palette [NESDev Wiki — PPU Pattern Tables]
 - Backgrounds are laid out on a 32×30 nametable (960 tiles mapping exactly to the 256×240 screen), but colour is assigned per 2×2 tile group via the Attribute Table meaning colour boundaries are locked to 16-pixel intervals and two adjacent tiles sharing an attribute cell cannot be coloured independently [NESDev Wiki — PPU Nametables]
 
+### Gameboy
+
+
+**Hardware:** The Game Boy hardware manages graphics through a Pixel Processing Unit (PPU) that uses a strictly tile-based approach due to resource constraints. Like its predecessor, the NES, the Game Boy uses 8x8 pixel tiles for all background and window layers, but its Object Attribute Memory (OAM) allows for two distinct sprite sizes: 8x8 or 8x16 pixels. While it can track up to 40 total sprites per frame, the hardware is limited to rendering only 10 sprites per horizontal scanline. If this limit is exceeded, any additional sprites on that line will not be drawn, a bottleneck similar to the NES's 8-sprite limit but slightly more generous relative to its smaller 160x144 pixel resolution. [Pan Docs, OAM – Object Attribute Memory]
+
 ## References
  
 - Carleton University School of Computer Science. *Nintendo Entertainment System NES (Original)* [VIN155]. Vintage Computing Collection. https://carleton.ca/scs/vintage-computing/item/vin155/
 - Copetti, Rodrigo. *Game Boy / Color Architecture: A Practical Analysis*. https://www.copetti.org/writings/consoles/game-boy/
 - Copetti, Rodrigo. *Super Nintendo / Famicom Architecture: A Practical Analysis*. https://www.copetti.org/writings/consoles/super-nintendo/
 - NESdev Wiki. PPU Palettes. https://www.nesdev.org/wiki/PPU_palettes
+- Pan Docs. OAM – Object Attribute Memory. https://gbdev.io/pandocs/OAM.html
 
  
