@@ -13,8 +13,6 @@ Three main things I am going to focus on:
 - **Tile & Sprite Sizing**  
   Differences in tile sizes and sprite dimensions used to build characters and environments, and how this impacts character detail and animation.
 
-- **Sprite Rendering Constraints**  
-  Limits on how many sprites can appear per scanline and overall memory usage, influencing flickering, layering, and on-screen complexity.
 
 The three games I traced:
  
