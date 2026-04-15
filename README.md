@@ -111,7 +111,13 @@ The SNES design of Simon Belmont represents a massive leap in pixel anatomy, mov
 - Each tile costs 16 bytes across two bitplanes, giving each pixel one of four values that index into a colour sub-palette [NESDev Wiki — PPU Pattern Tables]
 - Backgrounds are laid out on a 32×30 nametable (960 tiles mapping exactly to the 256×240 screen), but colour is assigned per 2×2 tile group via the Attribute Table meaning colour boundaries are locked to 16-pixel intervals and two adjacent tiles sharing an attribute cell cannot be coloured independently [NESDev Wiki — PPU Nametables]
 
+### Observation:
+I was curious about how the graphics were constructed and decided to break them down into tiles after doing some research. 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c5afa52c-45df-4525-8945-df7999abb698" />
+
+
 ### Gameboy
+![Uploading image.png…]()
 
 
 **Hardware:** The Game Boy hardware manages graphics through a Pixel Processing Unit (PPU) that uses a strictly tile-based approach due to resource constraints. Like its predecessor, the NES, the Game Boy uses 8x8 pixel tiles for all background and window layers, but its Object Attribute Memory (OAM) allows for two distinct sprite sizes: 8x8 or 8x16 pixels. While it can track up to 40 total sprites per frame, the hardware is limited to rendering only 10 sprites per horizontal scanline. If this limit is exceeded, any additional sprites on that line will not be drawn, a bottleneck similar to the NES's 8-sprite limit but slightly more generous relative to its smaller 160x144 pixel resolution. [Pan Docs, OAM – Object Attribute Memory]
