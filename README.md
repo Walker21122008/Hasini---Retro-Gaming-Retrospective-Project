@@ -134,6 +134,8 @@ The brick wall and ground are built from 16×16 metatile groupings (2×2 blocks 
 Color usage is super controlled due to the 3-colours-plus-transparency limit per sprite. Simon’s palette is chosen so he always pops against the darker greens and blacks of the background. I think this is one of those cases where limitations actually force better design—his silhouette is instantly readable even in motion.
 
 The HUD at the top takes up a full strip of 8×8 tiles and stays completely static, separate from the scrolling playfield. It does shrink the vertical space a bit, but I like how clean it feels since everything is neatly grid-aligned, and it reinforces that underlying tile structure the whole game is built on.
+<img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (15)" src="https://github.com/user-attachments/assets/b0941c60-bbc7-4345-ad03-4c04316d73ee" />
+
 
 ### Gameboy
 
