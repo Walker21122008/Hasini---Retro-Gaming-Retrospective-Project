@@ -97,6 +97,8 @@ The SNES design of Simon Belmont represents a massive leap in pixel anatomy, mov
 | **Main Character - Colours Used** | 3 colours (tan, brown, red) + transparency | 2 effective shades (light grey + black), avoiding muddy middle greys ("palette flattening") | Full 16-colour palette with colour ramping for specular highlights |
 | **Main Character - Weapon** | Whip rendered as a *separate sprite* on its own palette (light purple + white) to avoid exceeding the 3-colour limit | Whip simplified to match the same constrained palette as the character | Whip is a multi-jointed object with its own colour depth, enabling fluid motion and metallic texture without hardware flickering |
 
+### Current CastleVania Version
+
 ---
  
 ## 2. Tile and Sprite Sizing
