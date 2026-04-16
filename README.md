@@ -121,9 +121,19 @@ The SNES design of Simon Belmont represents a massive leap in pixel anatomy, mov
 - Backgrounds are laid out on a 32×30 nametable (960 tiles mapping exactly to the 256×240 screen), but colour is assigned per 2×2 tile group via the Attribute Table meaning colour boundaries are locked to 16-pixel intervals and two adjacent tiles sharing an attribute cell cannot be coloured independently [NESDev Wiki — PPU Nametables]
 
 ### Observation:
-I was curious about how the graphics were constructed and decided to break them down into tiles after doing some research. 
+I was curious about how the graphics were constructed and decided to break them down into tiles after doing some research. I also tried to separate some of the crucial sprites that I wanted to analyze.
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c5afa52c-45df-4525-8945-df7999abb698" />
+In Castlevania, Simon’s sprite is the most important element on screen, sitting at roughly a 2×4 tile footprint (~16×32 px). He’s constructed from stacked 8×8 tiles, effectively forming two vertical 8×16 hardware sprite columns. You can kind of feel the split between his upper body and legs in the animation. It’s subtle, but once you notice it, it explains why his movement has that slightly segmented, deliberate look.
 
+The smaller flame/branch effect comes in at around 2×2 tiles (~16×16 px), noticeably simpler than Simon. This feels intentional—not just for scale, but to stay within the NES’s 8-sprites-per-scanline limit. Personally, I think this constraint actually improves readability; the smaller effects don’t compete with Simon, so your eye always tracks the player first.
+
+The tree canopy is probably the coolest background trick here. It looks organic at first, but it’s clearly repeating 8×8 tiles arranged in patterns with slight variation. I like how the artists leaned into stylization instead of realism—the repetition almost becomes a texture rather than something you notice as “tiles.”
+
+The brick wall and ground are built from 16×16 metatile groupings (2×2 blocks of 8×8 tiles), which is a classic NES memory-saving design. What stands out to me is how much mileage they get out of very few tiles—the wall feels detailed, but it’s really just clever reuse and placement doing the work.
+
+Color usage is super controlled due to the 3-colours-plus-transparency limit per sprite. Simon’s palette is chosen so he always pops against the darker greens and blacks of the background. I think this is one of those cases where limitations actually force better design—his silhouette is instantly readable even in motion.
+
+The HUD at the top takes up a full strip of 8×8 tiles and stays completely static, separate from the scrolling playfield. It does shrink the vertical space a bit, but I like how clean it feels since everything is neatly grid-aligned, and it reinforces that underlying tile structure the whole game is built on.
 
 ### Gameboy
 
