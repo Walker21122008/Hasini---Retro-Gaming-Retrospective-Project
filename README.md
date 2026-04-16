@@ -28,11 +28,8 @@ The three games I traced:
  
 ---
 Here you can see the title screen in each of the three devices.
-
 <img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (3)" src="https://github.com/user-attachments/assets/f450bce7-5d5a-4ecc-8df9-230bce3f7b83" />
-
 I then analyzed the color patterns and visual details in each of the three devices.
-
 ### NES (Castlevania)
 <img width="270" height="368" alt="image" src="https://github.com/user-attachments/assets/6c972394-1151-4f8c-8a0f-68e50ad56951" />
 
