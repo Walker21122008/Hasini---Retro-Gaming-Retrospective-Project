@@ -86,6 +86,8 @@ Super Castlevania IV utilizes the SNES's dual Picture Processing Units (PPUs) to
 The SNES design of Simon Belmont represents a massive leap in pixel anatomy, moving from the NES's three-color "metasprite" to a rich 16-color palette that enables realistic material physics. This expanded range allows for color ramping to simulate the glint of moonlight on metallic armor and leather through specular highlights—a technique impossible under the "palette poverty" of the 8-bit era. Unlike the "palette flattening" and thick safety outlines required on the Game Boy to combat motion blur, the SNES sprite uses subtle anti-aliased shading and warm-to-cool hue contrast to pop against the purple backgrounds. Furthermore, the whip is no longer a solid-colored overlay but a complex, multi-jointed object with its own color depth, allowing for fluid motion and metallic textures that would have caused massive hardware flickering on previous systems.
 <img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (12)" src="https://github.com/user-attachments/assets/29eb7743-e51f-47ad-bc98-2f46cc289d8e" />
 
+### Final Observations
+
 | Category | 🎮 NES | 🟢 Game Boy | 🟣 SNES |
 |---|---|---|---|
 | **Title Screen - Colour Count** | 10 colours (background layer only; no active sprites to access the 12 sprite-palette slots) | 4 shades of grey (monochrome only) | Hundreds of colour variations from the 256-simultaneous palette |
@@ -129,6 +131,9 @@ The gift candles clock in at roughly 2×3 tiles (~16×24 px), noticeably smaller
 The dithered mist band is the most visually interesting tile technique in the scene. Since the GB only has four greyscale shades, Konami's artists alternated light and dark pixels in a checkerboard pattern within individual 8×8 tiles to simulate a mid-tone gradient. Generally, the eye would blend the two shades into a perceived grey that doesn't technically exist in the hardware palette.
 
 The wall and floor tiles repeat in 16×16 metatile groups (2×2 blocks of 8×8 tiles), which is the standard GB tile reuse strategy to keep CHR ROM small. The HUD top and bottom bars each consume a full tile row, squeezing the actual playfield down to just 16 usable tile rows (128 px).
+
+### Final Observations
+<img width="640" height="374" alt="image" src="https://github.com/user-attachments/assets/b21df205-e760-4462-bdc0-81614220021c" />
 
 ## References
  
