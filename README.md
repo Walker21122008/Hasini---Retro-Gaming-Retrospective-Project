@@ -1,10 +1,10 @@
 # Hasini---Retro-Gaming-Retrospective-Project
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="<img width="1920" height="1081" alt="image" src="https://github.com/user-attachments/assets/9133bf99-e826-435b-9028-444c1331d358" />
-">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/9133bf99-e826-435b-9028-444c1331d358">
   <img alt="Project Banner" src="light-banner.png">
 </picture>
+
 
 ## Introduction
  
