@@ -120,6 +120,8 @@ I was curious about how the graphics were constructed and decided to break them 
 
 **Hardware:** The Game Boy hardware manages graphics through a Pixel Processing Unit (PPU) that uses a strictly tile-based approach due to resource constraints. Like its predecessor, the NES, the Game Boy uses 8x8 pixel tiles for all background and window layers, but its Object Attribute Memory (OAM) allows for two distinct sprite sizes: 8x8 or 8x16 pixels. While it can track up to 40 total sprites per frame, the hardware is limited to rendering only 10 sprites per horizontal scanline. If this limit is exceeded, any additional sprites on that line will not be drawn, a bottleneck similar to the NES's 8-sprite limit but slightly more generous relative to its smaller 160x144 pixel resolution. [Pan Docs, OAM – Object Attribute Memory]
 
+<img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (10)" src="https://github.com/user-attachments/assets/d61908d9-0a66-491b-b084-e731594cb87c" />
+
 ## References
  
 - Carleton University School of Computer Science. *Nintendo Entertainment System NES (Original)* [VIN155]. Vintage Computing Collection. https://carleton.ca/scs/vintage-computing/item/vin155/
