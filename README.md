@@ -1,5 +1,11 @@
 # Hasini---Retro-Gaming-Retrospective-Project
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="<img width="1920" height="1081" alt="image" src="https://github.com/user-attachments/assets/9133bf99-e826-435b-9028-444c1331d358" />
+">
+  <img alt="Project Banner" src="light-banner.png">
+</picture>
+
 ## Introduction
  
 Personally, I am not a huge gamer, unfortunately, and the only game I have played, which was a retro game, was the multiple series of Pac-Man. So, I was thinking about choosing that initially. During my research through all the possible games, I came across Castlevania and fell in love with the series since it felt like the inverse of my favourite movie series, Hotel Transylvania.
