@@ -122,6 +122,14 @@ I was curious about how the graphics were constructed and decided to break them 
 
 <img width="1280" height="720" alt="Simon Belmont takes up approximately 10 tiles  (10)" src="https://github.com/user-attachments/assets/d61908d9-0a66-491b-b084-e731594cb87c" />
 
+Christopher's sprite is the most important finding in game screen.  His position as "4.1 tile, 3.88," which confirms he occupies roughly a 4×4 tile footprint (16×32 px). The dashed line through the middle marks where the two stacked 8×16 hardware OBJ slots divide. His upper half (torso/head) is one slot, lower half (legs) is the second.
+
+The gift candles clock in at roughly 2×3 tiles (~16×24 px), noticeably smaller than Christopher. This is intentional since the smaller enemy sprites leave more of the Game Boy's 10-sprites-per-scanline budget available for the player character, reducing flicker risk.
+
+The dithered mist band is the most visually interesting tile technique in the scene. Since the GB only has four greyscale shades, Konami's artists alternated light and dark pixels in a checkerboard pattern within individual 8×8 tiles to simulate a mid-tone gradient. Generally, the eye would blend the two shades into a perceived grey that doesn't technically exist in the hardware palette.
+
+The wall and floor tiles repeat in 16×16 metatile groups (2×2 blocks of 8×8 tiles), which is the standard GB tile reuse strategy to keep CHR ROM small. The HUD top and bottom bars each consume a full tile row, squeezing the actual playfield down to just 16 usable tile rows (128 px).
+
 ## References
  
 - Carleton University School of Computer Science. *Nintendo Entertainment System NES (Original)* [VIN155]. Vintage Computing Collection. https://carleton.ca/scs/vintage-computing/item/vin155/
