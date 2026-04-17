@@ -135,7 +135,7 @@ The Game Boy title screen operates under a strict four-shade monochrome palette,
 
 #### Gameplay Analysis
 
-![GB Gameplay](https://github.com/user-attachments/assets/9fd831ff-73a6-400f-8940-14c779118cd8)
+<img width="1366" height="768" alt="gameboyCastlevanieGameplayScreen" src="https://github.com/user-attachments/assets/e1d904eb-3061-412b-ba15-0d40ee39c2b8" />
 
 The four-shade palette is pushed to its limit to create depth without colour:
 
