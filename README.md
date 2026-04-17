@@ -152,6 +152,15 @@ The dithered mist band is the most visually interesting tile technique in the sc
 
 The wall and floor tiles repeat in 16×16 metatile groups (2×2 blocks of 8×8 tiles), which is the standard GB tile reuse strategy to keep CHR ROM small. The HUD top and bottom bars each consume a full tile row, squeezing the actual playfield down to just 16 usable tile rows (128 px).
 
+### SNES
+In Super Castlevania IV, Simon’s sprite is noticeably larger and more fluid than the NES version, sitting around a 3×5 to 4×5 tile footprint (~24×40 px or larger depending on frame). Like before, he’s still built from 8×8 tiles, but the SNES allows many more sprites on screen and better composition, so the seams are much harder to notice. This is where the character starts to feel less like stacked blocks and more like a cohesive illustration.
+
+The whip is the biggest technical and visual upgrade. Instead of a straight chain, it’s now a curved series of 8×8 sprite tiles arranged in an arc, taking advantage of the SNES’s ability to handle more sprites and flexible positioning. According to Super Nintendo Entertainment System hardware specs, the system supports significantly more sprites per scanline and overall than the NES, which is why this effect works so smoothly. This makes the whip feel dynamic and expressive rather than rigid.
+
+The skeleton enemy is also much larger, likely 4×5 tiles or more, and benefits from the same hardware improvements. The SNES supports up to 128 sprites total and 32 per scanline, compared to the NES’s stricter limits, allowing enemies to occupy more space without flicker. This gives them more presence on screen and makes encounters feel less constrained.
+
+Backgrounds are still fundamentally tile-based, using 8×8 tiles grouped into larger 16×16 or 32×32 metatiles, but with far more variation. With the SNES’s expanded color palette (up to 256 colors on screen), tiles can include gradients and subtle shading, reducing visible repetition. The wall textures here feel more continuous and less obviously tiled compared to NES environments.
+
 ### Final Observations
 <img width="640" height="374" alt="image" src="https://github.com/user-attachments/assets/b21df205-e760-4462-bdc0-81614220021c" />
 
