@@ -181,7 +181,7 @@ The trade-off is that Christopher ends up looking like a paper cutout compared t
 
 #### Title Screen Analysis
 
-![SNES Title Screen](https://github.com/user-attachments/assets/f837e242-a9a7-4e7c-9715-40d9dda05aee)
+![SNES Title Screen](Images/SNES-TitleScreen.png)
 
 The jump to [256 simultaneous colours](https://www.copetti.org/writings/consoles/super-nintendo/) removes every restriction that defined the earlier entries - and it shows immediately.  
 
@@ -193,7 +193,7 @@ When I first loaded this title screen I thought the wall looked almost photograp
 
 #### Gameplay Analysis
 
-![SNES Gameplay](https://github.com/user-attachments/assets/b8c32744-31c2-4721-a71b-2e9f15ccb3c1)
+![SNES Gameplay](Images/SNES-Gameplay.png)
 
 The SNES gameplay uses every capability the dual-PPU system offers:
 
@@ -207,7 +207,7 @@ The SNES gameplay uses every capability the dual-PPU system offers:
 
 #### Simon Belmont - SNES Sprite Design
 
-![Simon SNES](https://github.com/user-attachments/assets/29eb7743-e51f-47ad-bc98-2f46cc289d8e)
+![Simon SNES](Images/SNES-SPRITES)
 
 - Looking at Simon's SNES sprite after studying his NES version is a bit like comparing a pencil sketch to a painting.  
 
