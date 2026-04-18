@@ -295,7 +295,7 @@ It supports up to [**40 total sprites per frame**](https://gbdev.io/pandocs/OAM.
 
 #### Tile Breakdown
 
-![GB Tile Analysis](https://github.com/user-attachments/assets/d61908d9-0a66-491b-b084-e731594cb87c)
+![GB Tile Analysis](Images/Gameboy-TileScreen.png)
 
 | Element | Size | Notes |
 |---|---|---|
