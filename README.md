@@ -207,7 +207,7 @@ The SNES gameplay uses every capability the dual-PPU system offers:
 
 #### Simon Belmont - SNES Sprite Design
 
-![Simon SNES](Images/SNES-SPRITES)
+![Simon SNES](Images/SNES-SPRITES.png)
 
 - Looking at Simon's SNES sprite after studying his NES version is a bit like comparing a pencil sketch to a painting.  
 
