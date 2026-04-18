@@ -89,7 +89,7 @@ The technique that stood out most to me was **dithering** - alternating checkerb
 
 #### Simon Belmont - Sprite Design
 
-![Simon NES](https://github.com/user-attachments/assets/278fc135-4002-45c0-8f5b-d49a614b019b)
+![Simon NES](Images/NES-SPRITES.png)
 
 Simon Belmont's sprite is built from just three colours - tan, brown, and bold red - plus a [transparency channel](https://www.nesdev.org/wiki/PPU_OAM#Byte_2_-_Attributes). What fascinated me here was how much the artists achieved within that constraint.  The red tunic is doing a lot of work here. It stands out against every background colour in the game, which makes him easy to track.
 
