@@ -260,8 +260,6 @@ Before this project I knew abstractly that old games used tile-based rendering. 
 
 #### Tile Breakdown
 
-![NES Tile Grid](https://github.com/user-attachments/assets/c5afa52c-45df-4525-8945-df7999abb698)
-
 ![NES Tile Analysis](https://github.com/user-attachments/assets/b0941c60-bbc7-4345-ad03-4c04316d73ee)
 
 | Element | Size | Notes |
