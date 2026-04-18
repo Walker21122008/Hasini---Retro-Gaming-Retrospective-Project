@@ -77,9 +77,9 @@ This was one of those moments where my graphics coursework made something click.
 
 ---
 
-#### Gameplay Analysis
+#### Gameplay Colour Effect Analysis
 
-![NES Gameplay](https://github.com/user-attachments/assets/d4c0e132-a49a-40ad-98eb-ed27cdbeb3cc)
+![NES Gameplay](Images/NES-Gameplay.png)
 
 Once I got into the game, the colour palette choices started telling a story. The deep blues and blacks create a moonlit night sky, the vibrant greens anchor the foreground foliage, and the oranges and browns give the castle walls their Gothic weight. The overall effect is genuinely good - more than I expected from 10 colours.
 
