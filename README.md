@@ -81,7 +81,7 @@ This was one of those moments where my graphics coursework made something click.
 
 ![NES Gameplay](https://github.com/user-attachments/assets/d4c0e132-a49a-40ad-98eb-ed27cdbeb3cc)
 
-Once I got into the game, the colour palette choices started telling a story. The deep blues and blacks create a moonlit night sky, the vibrant greens anchor the foreground foliage, and the oranges and browns give the castle walls their Gothic weight. The overall effect is genuinely atmospheric - more than I expected from 10 colours.
+Once I got into the game, the colour palette choices started telling a story. The deep blues and blacks create a moonlit night sky, the vibrant greens anchor the foreground foliage, and the oranges and browns give the castle walls their Gothic weight. The overall effect is genuinely good - more than I expected from 10 colours.
 
 The technique that stood out most to me was **dithering** - alternating checkerboard pixel patterns that simulate gradients where smooth colour transitions would otherwise be impossible. I'd encountered dithering in my image processing studies as a method for approximating tonal values within a restricted palette, but I'd never seen it deployed this purposefully. Because the background is restricted to [four 3-colour sub-palettes](https://www.nesdev.org/wiki/PPU_nametables), every smooth stone wall you see is actually a carefully arranged checkerboard. Once you notice it, you see it absolutely everywhere.
 
