@@ -105,8 +105,6 @@ A few techniques stood out that connect directly to things I'd studied:
 
 ### Game Boy - *Castlevania: The Adventure* (1989)
 
-![Gameboy Gameplay](Images/Gameboy-Gameplay.png)
-
 <img align="right" width="180" src="https://github.com/user-attachments/assets/be3cc3e3-2c1e-44fd-b3a6-ca05dc2f7f12" />
 
 **Hardware Specs**
@@ -134,6 +132,7 @@ Advanced dithering patterns - including both the checkerboard approach used on t
 
 #### Gameplay Analysis
 
+![Gameboy Gameplay](Images/Gameboy-Gameplay.png)
 
 The [four-shade palette](https://www.copetti.org/writings/consoles/game-boy/) is pushed hard to create spatial depth without any colour cues:
 
