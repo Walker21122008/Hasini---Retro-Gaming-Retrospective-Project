@@ -122,6 +122,8 @@ A few techniques stood out that connect directly to things I'd studied:
 
 #### Title Screen Analysis
 
+![Gameboy Title Screen](Images/Gameboy - TitleScreen.jpg)
+
 The Game Boy title screen operates under a strict [four-shade monochrome palette](https://www.copetti.org/writings/consoles/game-boy/) - no colour at all. What struck me was how the designers responded to that constraint not by simplifying, but by leaning *into* texture.
 
 Advanced dithering patterns - including both the checkerboard approach used on the NES and denser stippling techniques - simulate textured stone and shading within the logo. The result is a grittier, more weathered look than the NES title screen, despite having fewer visual options. The side scenery is deliberately sparse, concentrating the detail budget on the typography - a necessary trade-off since the small, non-backlit screen requires maximum contrast just to remain readable. That design choice - prioritise legibility first - connects directly to accessibility principles I'd encountered in my design coursework.
