@@ -124,7 +124,7 @@ A few techniques stood out that connect directly to things I'd studied:
 
 ![Gameboy Title Screen](Images/Gameboy-TitleScreen.jpg)
 
-The Game Boy title screen operates under a strict [four-shade monochrome palette](https://www.copetti.org/writings/consoles/game-boy/) - no colour at all. What struck me was how the designers responded to that constraint not by simplifying, but by leaning *into* texture.
+The Game Boy title screen operates under a strict [four-shade monochrome palette](https://www.copetti.org/writings/consoles/game-boy/) - no colour at all. What struck me was how the designers responded to that constraint not by simplifying, but by leaning *into* texture.  Honestly, I felt a bit hard to read at a glance.  
 
 Advanced dithering patterns - including both the checkerboard approach used on the NES and denser stippling techniques - simulate textured stone and shading within the logo. The result is a grittier, more weathered look than the NES title screen, despite having fewer visual options. The side scenery is deliberately sparse, concentrating the detail budget on the typography - a necessary trade-off since the small, non-backlit screen requires maximum contrast just to remain readable. That design choice - prioritise legibility first - connects directly to accessibility principles I'd encountered in my design coursework.
 
@@ -134,6 +134,7 @@ Advanced dithering patterns - including both the checkerboard approach used on t
 
 ![Gameboy Gameplay](Images/Gameboy-Gameplay.png)
 
+This is where I felt the colour limitation most.  The black outline is holding everything together, but it is clearly not very good experience.  The mist band across the middle is a clever design thought - it adds some flavour to what is otherwise a very flat scene.  
 The [four-shade palette](https://www.copetti.org/writings/consoles/game-boy/) is pushed hard to create spatial depth without any colour cues:
 
 | Layer | Shade Strategy |
@@ -184,7 +185,7 @@ The trade-off is that Christopher ends up looking like a paper cutout compared t
 
 The jump to [256 simultaneous colours](https://www.copetti.org/writings/consoles/super-nintendo/) removes every restriction that defined the earlier entries - and it shows immediately.  
 
-The stone wall background uses dozens of variations of purple, grey, and green in a smooth gradient - something that would have required aggressive dithering on the NES and was literally impossible on the Game Boy. The [dual PPU hardware enables **alpha blending**](https://www.copetti.org/writings/consoles/super-nintendo/), which produces the soft transparency visible in the vine textures and the metallic sheen on the logo.  The vines feel like they are actually sitting in front of the wall rather than just painted on it.
+The stone wall texture is quite appealing.  The stone wall background uses dozens of variations of purple, grey, and green in a smooth gradient - something that would have required aggressive dithering on the NES and was literally impossible on the Game Boy. The [dual PPU hardware enables **alpha blending**](https://www.copetti.org/writings/consoles/super-nintendo/), which produces the soft transparency visible in the vine textures and the metallic sheen on the logo.  The vines feel like they are actually sitting in front of the wall rather than just painted on it.
 
 When I first loaded this title screen I thought the wall looked almost photographic compared to the NES version. Working through the hardware specs, I understood why - each 8×8 tile can now hold [up to 16 distinct colours](https://www.copetti.org/writings/consoles/super-nintendo/), so a single brick can contain an entire gradient from lit face to shadowed edge.
 
@@ -208,13 +209,14 @@ The SNES gameplay uses every capability the dual-PPU system offers:
 
 ![Simon SNES](https://github.com/user-attachments/assets/29eb7743-e51f-47ad-bc98-2f46cc289d8e)
 
-Looking at Simon's SNES sprite after studying his NES version is a bit like comparing a pencil sketch to a painting.
+- Looking at Simon's SNES sprite after studying his NES version is a bit like comparing a pencil sketch to a painting.  
 
-The **[full 16-colour palette](https://www.copetti.org/writings/consoles/super-nintendo/)** enables colour ramping - using a graduated sequence of shades to simulate the way light glances off a curved surface. His armour genuinely appears metallic because there are enough colour steps between the lightest highlight and the deepest shadow to suggest roundness. On the NES, with only three colours, the same surfaces look flat by necessity.
+- The **[full 16-colour palette](https://www.copetti.org/writings/consoles/super-nintendo/)** enables colour ramping - using a graduated sequence of shades to simulate the way light glances off a curved surface. 
+I can see actual highlights on his armour here, which is something neither earlier version had.  His armour genuinely appears metallic because there are enough colour steps between the lightest highlight and the deepest shadow to suggest roundness. On the NES, with only three colours, the same surfaces look flat by necessity.
 
-**Anti-aliased shading** replaces the thick safety outlines the Game Boy required. Rather than a hard black border to keep the character readable, the SNES sprite uses soft edge pixels that blend into the background - a technique that requires enough colour resolution to pull off.
+- **Anti-aliased shading** replaces the thick safety outlines the Game Boy required. Rather than a hard black border to keep the character readable, the SNES sprite uses soft edge pixels that blend into the background - a technique that requires enough colour resolution to pull off.
 
-**The whip** is no longer a solid-coloured chain of tiles - it's a complex, multi-jointed object with its own colour depth, enabling fluid motion and metallic texture. The SNES's [128-sprite capacity and 32-sprites-per-scanline limit](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System#Technical_specifications) means the whip can be composed of multiple tiles without causing the flicker that would have been unavoidable on the NES.
+- **The whip**  looks like a real object rather than a colour overlay.  It is no longer a solid-coloured chain of tiles - it's a complex, multi-jointed object with its own colour depth, enabling fluid motion and metallic texture. The SNES's [128-sprite capacity and 32-sprites-per-scanline limit](https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System#Technical_specifications) means the whip can be composed of multiple tiles without causing the flicker that would have been unavoidable on the NES.
 
 ---
 
