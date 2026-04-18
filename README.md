@@ -122,7 +122,7 @@ A few techniques stood out that connect directly to things I'd studied:
 
 #### Title Screen Analysis
 
-![Gameboy Title Screen](Images/Gameboy\ -\ TitleScreen.jpg)
+![Gameboy Title Screen](Images/Gameboy-TitleScreen.jpg)
 
 The Game Boy title screen operates under a strict [four-shade monochrome palette](https://www.copetti.org/writings/consoles/game-boy/) - no colour at all. What struck me was how the designers responded to that constraint not by simplifying, but by leaning *into* texture.
 
@@ -131,6 +131,7 @@ Advanced dithering patterns - including both the checkerboard approach used on t
 ---
 
 #### Gameplay Analysis
+
 
 The [four-shade palette](https://www.copetti.org/writings/consoles/game-boy/) is pushed hard to create spatial depth without any colour cues:
 
@@ -147,6 +148,8 @@ This is a problem the NES never has. Colour contrast is doing invisible, essenti
 ---
 
 #### Christopher Belmont - Sprite Design
+
+![Gameboy SPRITES](Images/Gameboy_SPRITES.jpg)
 
 Christopher's design was a calculated response to the Game Boy's particular hardware challenges. The screen's [slow LCD refresh rate](https://www.copetti.org/writings/consoles/game-boy/) - covered in detail in Rodrigo Copetti's hardware analysis - turns fine internal lines into an unreadable smudge in motion.
 
