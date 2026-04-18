@@ -176,9 +176,9 @@ The trade-off is that Christopher ends up looking like a paper cutout compared t
 
 ![SNES Title Screen](https://github.com/user-attachments/assets/f837e242-a9a7-4e7c-9715-40d9dda05aee)
 
-The jump to [256 simultaneous colours](https://www.copetti.org/writings/consoles/super-nintendo/) removes every restriction that defined the earlier entries - and it shows immediately.
+The jump to [256 simultaneous colours](https://www.copetti.org/writings/consoles/super-nintendo/) removes every restriction that defined the earlier entries - and it shows immediately.  
 
-The stone wall background uses dozens of variations of purple, grey, and green in a smooth gradient - something that would have required aggressive dithering on the NES and was literally impossible on the Game Boy. The [dual PPU hardware enables **alpha blending**](https://www.copetti.org/writings/consoles/super-nintendo/), which produces the soft transparency visible in the vine textures and the metallic sheen on the logo.
+The stone wall background uses dozens of variations of purple, grey, and green in a smooth gradient - something that would have required aggressive dithering on the NES and was literally impossible on the Game Boy. The [dual PPU hardware enables **alpha blending**](https://www.copetti.org/writings/consoles/super-nintendo/), which produces the soft transparency visible in the vine textures and the metallic sheen on the logo.  The vines feel like they are actually sitting in front of the wall rather than just painted on it.
 
 When I first loaded this title screen I thought the wall looked almost photographic compared to the NES version. Working through the hardware specs, I understood why - each 8×8 tile can now hold [up to 16 distinct colours](https://www.copetti.org/writings/consoles/super-nintendo/), so a single brick can contain an entire gradient from lit face to shadowed edge.
 
