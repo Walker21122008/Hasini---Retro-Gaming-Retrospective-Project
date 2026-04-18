@@ -41,6 +41,8 @@ The NES, Game Boy, and SNES each have hard limits on colour count, sprites per s
 
 ![Title Screen Comparison](https://github.com/user-attachments/assets/f450bce7-5d5a-4ecc-8df9-230bce3f7b83)
 
+Seeing all three next to each other, the NES one feels the most deliberately bold to me — the red and green logo against black is simple, but it works. The Game Boy one looks dense and a bit hard to read at a glance. The SNES one is clearly the most visually comfortable to look at, the stone texture actually feels solid.
+
 ---
 
 ## Part 1 - Colour Palettes
