@@ -235,7 +235,7 @@ I can see actual highlights on his armour here, which is something neither earli
 
 ### Modern Comparison - *Castlevania: Belmont's Curse* (PS5 / Xbox Series X / PC)
 
-![Belmont's Curse](https://github.com/user-attachments/assets/1c35e215-87dc-463c-91b2-530a2225e203)
+![Belmont's Curse](Images/PS5-Castlevania-Gameplay.png)
 
 *Castlevania: Belmont's Curse* operates under no hardware colour constraints whatsoever - running on modern platforms with access to a full **32-bit HDR colour space** and effectively unlimited simultaneous colours.
 
@@ -312,6 +312,8 @@ The dithered mist band is the detail that caught my eye most here. It's the same
 ### SNES
 
 Simon's sprite sits around a **3×5 to 4×5 tile footprint (~24×40 px or larger depending on the frame)**. Still built from [8×8 tiles](https://www.copetti.org/writings/consoles/super-nintendo/) - but the SNES allows far more sprites on screen simultaneously, so the seams between tile sections are much harder to notice. The character starts to feel less like an assembly of blocks and more like a cohesive illustration.
+
+![SNES Tile Analysis](Images/SNES-TileScreen.png)
 
 | Element | Size | Notes |
 |---|---|---|
