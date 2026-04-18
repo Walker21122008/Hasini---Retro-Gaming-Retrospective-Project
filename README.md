@@ -345,8 +345,19 @@ On the NES, the entire screen was just **two layers**: a [background tile layer 
 
 ### Tile & Sprite Sizing - Final Comparison
 
-![Final Comparison](https://github.com/user-attachments/assets/b21df205-e760-4462-bdc0-81614220021c)
-
+| Property | Castlevania (NES · 1987) | CV: The Adventure (GB · 1989) | Super CV IV (SNES · 1991) |
+|---|---|---|---|
+| **Background tile** | 8×8 px | 8×8 px | 8×8 or 16×16 px |
+| **Screen resolution** | 256×240 | 160×144 | 256×224 |
+| **Tile grid (screen)** | 32×30 tiles | 20×18 tiles | — |
+| **BG layers** | — | — | Up to 4 planes |
+| **HW sprite size** | 8×8 or 8×16 px | 8×8 or 8×16 px | 8×8 → 64×64 px |
+| **Player sprite** | ~16×32 px (Simon) | ~16×24 px (Christopher) | ~32×56 px (Simon) |
+| **Sprite compositing** | 4 sprites stacked | — | — |
+| **Color depth / palette** | — | 4 shades (2-bit) | 16 colors/sprite |
+| **Max sprites/line** | 8 (flicker risk) | 10 (GB limit) | — |
+| **Mode 7** | — | — | Rotation/scaling |
+| **Notable limitation/feature** | Simon is 4 HW sprites stacked vertically; exceeding 8 sprites/scanline causes the famous sprite flicker in crowded rooms. | Screen is 37% smaller than NES; fewer animation frames contribute to the game's notoriously sluggish feel. | Simon's sprite is ~4× the pixel area of the NES version; larger sprites enabled more animation frames, facial detail, the 8-directional whip, and Mode 7 effects like the staircase descent intro. |
 ---
 
 ## What I Took Away
