@@ -149,7 +149,7 @@ This is a problem the NES never has. Colour contrast is doing invisible, essenti
 
 #### Christopher Belmont - Sprite Design
 
-![Gameboy SPRITES](Images/Gameboy_SPRITES.jpg)
+![Gameboy SPRITES](Images/Gameboy_SPRITES.png)
 
 Christopher's design was a calculated response to the Game Boy's particular hardware challenges. The screen's [slow LCD refresh rate](https://www.copetti.org/writings/consoles/game-boy/) - covered in detail in Rodrigo Copetti's hardware analysis - turns fine internal lines into an unreadable smudge in motion.
 
