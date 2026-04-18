@@ -67,7 +67,7 @@ Seeing all three next to each other, the NES one feels the most deliberately bol
 
 #### Title Screen Analysis
 
-![NES Title Screen](https://github.com/user-attachments/assets/ae917bfa-c88d-4016-9f35-e4dce0b93879)
+![NES Title Screen](Images/NES-Title-Screen.png)
 
 Looking at this title screen, the first thing I did was count the distinct colours - and I came up with just **10**. The whole thing is rendered as a single background layer with no active sprites. That number actually sits *below* the [theoretical 13-colour background ceiling](https://www.nesdev.org/wiki/PPU_palettes), and after reading about the NES PPU, I understand why: the artists deliberately kept the colour count low to avoid visible clashing at the mandatory [**16×16 pixel attribute grid**](https://www.nesdev.org/wiki/PPU_attribute_tables) boundaries.
 
