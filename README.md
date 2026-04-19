@@ -330,6 +330,8 @@ The increase in the per-scanline limit from [8 (NES)](https://www.nesdev.org/wik
 
 ### Modern Comparison - *Castlevania: Belmont's Curse*
 
+![Castlevania Belmont's curse](Images/PS5-Castlevania-Gameplay-2.png)
+
 In *Belmont's Curse*, the game screen is constructed as a series of layered 2D rendering passes on a modern GPU - an architecture that is fundamentally different from anything the retro hardware was doing.
 
 | Layer | Description |
