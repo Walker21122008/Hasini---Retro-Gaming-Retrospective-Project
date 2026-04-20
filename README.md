@@ -176,7 +176,9 @@ The trade-off is that Christopher ends up looking like a paper cutout compared t
 
 ### SNES - *Super Castlevania IV* (1991)
 
-<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/8c824089-9b33-4c7f-bcd0-8489f34d636a" />
+<img align="right" width="180" src="https://github.com/user-attachments/assets/8c824089-9b33-4c7f-bcd0-8489f34d636a" />
+
+*Figure X: Super Nintendo Entertainment System (SNES) console.*
 
 **Hardware Specs**
 - **Simultaneous colours:** [256 from a master palette of 32,768](https://www.copetti.org/writings/consoles/super-nintendo/)
@@ -185,6 +187,8 @@ The trade-off is that Christopher ends up looking like a paper cutout compared t
 - **Source:** [Copetti, *Super Nintendo / Famicom Architecture*](https://www.copetti.org/writings/consoles/super-nintendo/)
 
 **What I played:** `Super Castlevania IV` - loaded into Snes9x. Made it through the first several stages, and I kept stopping just to look at the backgrounds.
+
+<br clear="right"/>
 
 ---
 
