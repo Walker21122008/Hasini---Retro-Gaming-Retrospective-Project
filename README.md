@@ -158,11 +158,11 @@ This is a problem the NES never has. Colour contrast is doing invisible, essenti
 #### Christopher Belmont - Sprite Design
 
 ![Gameboy SPRITES](Images/Gameboy_SPRITES.png)
-
+*Figure 7: Christopher Belmont sprite sheet (Game Boy). Simplified to solid blocks and thick outlines to remain legible under the LCD's slow refresh rate.*
 
 Christopher's design was a calculated response to the Game Boy's particular hardware challenges. The screen's [slow LCD refresh rate](https://www.copetti.org/writings/consoles/game-boy/) - covered in detail in Rodrigo Copetti's hardware analysis - turns fine internal lines into an unreadable smudge in motion.
 
-The design response is what I'd call "safety simplicity":
+The design response is what I'd call "safe play":
 
 **Solid blocks of light grey** replace fine internal detail. Rather than drawing individual straps, buckles, or cloth folds, the artists used flat fills that retain their shape even when the display is blurring moving pixels.
 
@@ -175,6 +175,8 @@ The trade-off is that Christopher ends up looking like a paper cutout compared t
 ---
 
 ### SNES - *Super Castlevania IV* (1991)
+
+<img width="1000" height="1000" alt="image" src="https://github.com/user-attachments/assets/8c824089-9b33-4c7f-bcd0-8489f34d636a" />
 
 **Hardware Specs**
 - **Simultaneous colours:** [256 from a master palette of 32,768](https://www.copetti.org/writings/consoles/super-nintendo/)
@@ -189,6 +191,7 @@ The trade-off is that Christopher ends up looking like a paper cutout compared t
 #### Title Screen Analysis
 
 ![SNES Title Screen](Images/SNES-TitleScreen.png)
+*Figure 8: Super Castlevania IV (SNES, 1991) title screen. Smooth gradients, hardware alpha blending on the vine textures, and dozens of simultaneous grey and purple values replace the dithering strategies required on earlier hardware.*
 
 The jump to [256 simultaneous colours](https://www.copetti.org/writings/consoles/super-nintendo/) removes every restriction that defined the earlier entries - and it shows immediately.  
 
@@ -201,6 +204,8 @@ When I first loaded this title screen I thought the wall looked almost photograp
 #### Gameplay Analysis
 
 ![SNES Gameplay](Images/SNES-Gameplay.png)
+Figure 9: Super Castlevania IV (SNES, 1991) gameplay. Hardware alpha blending produces translucent foreground layers; 16 colours per tile allow organic stone and moss textures without visible repetition.
+
 
 The SNES gameplay uses every capability the dual-PPU system offers:
 
@@ -215,6 +220,7 @@ The SNES gameplay uses every capability the dual-PPU system offers:
 #### Simon Belmont - SNES Sprite Design
 
 ![Simon SNES](Images/SNES-SPRITES.png)
+*Figure 10: Simon Belmont sprite sheet (SNES). The full 16-colour palette enables colour ramping to simulate metallic highlights; the whip is a curved multi-tile object rather than a flat colour overlay.*
 
 - Looking at Simon's SNES sprite after studying his NES version is a bit like comparing a pencil sketch to a painting.  
 
@@ -243,6 +249,7 @@ I can see actual highlights on his armour here, which is something neither earli
 ### Modern Comparison - *Castlevania: Belmont's Curse* (PS5 / Xbox Series X / PC)
 
 ![Belmont's Curse](Images/PS5-Castlevania-Gameplay.png)
+Figure 11: Castlevania: Belmont's Curse (PS5 / Xbox Series X / PC) - colour palette section. Despite access to a full 32-bit HDR colour space, Evil Empire deliberately restricted the game to a near-monochromatic fire palette, echoing the constrained aesthetics of the retro entries.
 
 *Castlevania: Belmont's Curse* operates under no hardware colour constraints whatsoever - running on modern platforms with access to a full **32-bit HDR colour space** and effectively unlimited simultaneous colours.
 
@@ -276,9 +283,10 @@ Before this project I knew abstractly that old games used tile-based rendering. 
 #### Tile Breakdown
 
 ![NES Tile Analysis](Images/NES-Tile-Screen.png)
+*Figure 12: NES tile grid overlay. The underlying 8×8 tile structure and 16-pixel colour attribute boundaries are visible at background seams.*
 
 ![NES Tile Analysis](Images/NES-SPRITES_Tiles.png)
-
+*Figure 13: Simon Belmont (NES) tile breakdown. The 2×4 tile stack and individual sprite boundaries are annotated; each hardware sprite carries its own 3-colour sub-palette.*
 
 | Element | Size | Notes |
 |---|---|---|
@@ -303,6 +311,7 @@ It supports up to [**40 total sprites per frame**](https://gbdev.io/pandocs/OAM.
 #### Tile Breakdown
 
 ![GB Tile Analysis](Images/Gameboy-TileScreen.png)
+*Figure 14: Game Boy tile grid overlay. Christopher Belmont's 16×32 px sprite sits within a 20×18 tile screen; the HUD rows at top and bottom reduce the usable playfield to just 16 tile rows (128 px).*
 
 | Element | Size | Notes |
 |---|---|---|
@@ -321,6 +330,7 @@ The dithered mist band is the detail that caught my eye most here. It's the same
 Simon's sprite sits around a **3×5 to 4×5 tile footprint (~24×40 px or larger depending on the frame)**. Still built from [8×8 tiles](https://www.copetti.org/writings/consoles/super-nintendo/) - but the SNES allows far more sprites on screen simultaneously, so the seams between tile sections are much harder to notice. The character starts to feel less like an assembly of blocks and more like a cohesive illustration.
 
 ![SNES Tile Analysis](Images/SNES-TileScreen.png)
+*Figure 15: Super Castlevania IV (SNES) tile and sprite breakdown. Simon's larger 24×40 px footprint, the curved multi-tile whip, and skeleton enemy sprites are shown alongside the background tile structure.*
 
 | Element | Size | Notes |
 |---|---|---|
@@ -338,6 +348,8 @@ The increase in the per-scanline limit from [8 (NES)](https://www.nesdev.org/wik
 ### Modern Comparison - *Castlevania: Belmont's Curse*
 
 ![Castlevania Belmont's curse](Images/PS5-Castlevania-Gameplay-2.png)
+*Figure 16: Castlevania: Belmont's Curse - tile/sprite section. No traditional tile grid is in use; the screen is constructed from layered GPU rendering passes including parallax backgrounds, a gameplay layer, and a post-processing stack (bloom, heat distortion, HDR tone mapping).*
+
 I genuinely don't see evidence of a traditional tile-based rendering system at all in this game and this is a massive improvement. In *Belmont's Curse*, the game screen is constructed as a series of layered 2D rendering passes on a modern GPU - an architecture that is fundamentally different from anything the retro hardware was doing.
 
 | Layer | Description |
