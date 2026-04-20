@@ -40,6 +40,7 @@ The NES, Game Boy, and SNES each have hard limits on colour count, sprites per s
 > Here you can see the title screen rendered on each of the three devices side by side. Even before you press start, the hardware constraints are written all over the screen.
 
 ![Title Screen Comparison](https://github.com/user-attachments/assets/f450bce7-5d5a-4ecc-8df9-230bce3f7b83)
+*Figure 1: Title screens side by side - NES (left), Game Boy (centre), SNES (right). The hardware constraints of each platform are visible before the game even begins.*
 
 Seeing all three next to each other, the NES one feels the most deliberately bold to me — the red and green logo against black is simple, but it works. The Game Boy one looks dense and a bit hard to read at a glance. The SNES one is clearly the most visually comfortable to look at, the stone texture actually feels solid.
 
@@ -68,6 +69,7 @@ Seeing all three next to each other, the NES one feels the most deliberately bol
 #### Title Screen Analysis
 
 ![NES Title Screen](Images/NES-Title-Screen.png)
+*Figure 2: Castlevania (NES, 1987) title screen. Rendered using 10 colours on a single background layer with no active sprites.*
 
 Looking at this title screen, the first thing I did was count the distinct colours - and I came up with just **10**. The whole thing is rendered as a single background layer with no active sprites. That number actually sits *below* the [theoretical 13-colour background ceiling](https://www.nesdev.org/wiki/PPU_palettes), and after reading about the NES PPU, I understand why: the artists deliberately kept the colour count low to avoid visible clashing at the mandatory [**16×16 pixel attribute grid**](https://www.nesdev.org/wiki/PPU_attribute_tables) boundaries.
 
@@ -80,6 +82,7 @@ This was one of those moments where my graphics coursework made something click.
 #### Gameplay Colour Effect Analysis
 
 ![NES Gameplay](Images/NES-Gameplay.png)
+*Figure 3: Castlevania (NES, 1987) Stage 1 gameplay. Deep blues, blacks, and greens establish the Gothic atmosphere; dithered checkerboard patterns simulate gradients within the 4-colour attribute blocks.*
 
 Once I got into the game, the colour palette choices started telling a story. The deep blues and blacks create a moonlit night sky, the vibrant greens anchor the foreground foliage, and the oranges and browns give the castle walls their Gothic weight. The overall effect is genuinely good - more than I expected from 10 colours.
 
@@ -90,6 +93,7 @@ The technique that stood out most to me was **dithering** - alternating checkerb
 #### Simon Belmont - Sprite Design
 
 ![Simon NES](Images/NES_SPRITES.png)
+*Figure 4: Simon Belmont sprite sheet (NES). Built from three colours plus transparency across a 16×32 px (2×4 tile) footprint; the whip is a separate sprite on its own sub-palette.*
 
 Simon Belmont's sprite is built from just three colours - tan, brown, and bold red - plus a [transparency channel](https://www.nesdev.org/wiki/PPU_OAM#Byte_2_-_Attributes). What fascinated me here was how much the artists achieved within that constraint.  The red tunic is doing a lot of work here. It stands out against every background colour in the game, which makes him easy to track.
 
@@ -123,6 +127,7 @@ A few techniques stood out that connect directly to things I'd studied:
 #### Title Screen Analysis
 
 ![Gameboy Title Screen](Images/Gameboy-TitleScreen.jpg)
+*Figure 5: Castlevania: The Adventure (Game Boy, 1989) title screen. All shading is achieved through dithering within a strict four-shade monochrome palette.*
 
 The Game Boy title screen operates under a strict [four-shade monochrome palette](https://www.copetti.org/writings/consoles/game-boy/) - no colour at all. What struck me was how the designers responded to that constraint not by simplifying, but by leaning *into* texture.  Honestly, I felt a bit hard to read at a glance.  
 
@@ -133,6 +138,7 @@ Advanced dithering patterns - including both the checkerboard approach used on t
 #### Gameplay Analysis
 
 ![Gameboy Gameplay](Images/Gameboy-Gameplay.png)
+*Figure 6: Castlevania: The Adventure (Game Boy, 1989) gameplay. A dithered mist band across the mid-ground is the most visually sophisticated technique visible here, simulating a gradient the hardware cannot produce natively.*
 
 This is where I felt the colour limitation most.  The black outline is holding everything together, but it is clearly not very good experience.  The mist band across the middle is a clever design thought - it adds some flavour to what is otherwise a very flat scene.  
 The [four-shade palette](https://www.copetti.org/writings/consoles/game-boy/) is pushed hard to create spatial depth without any colour cues:
@@ -152,6 +158,7 @@ This is a problem the NES never has. Colour contrast is doing invisible, essenti
 #### Christopher Belmont - Sprite Design
 
 ![Gameboy SPRITES](Images/Gameboy_SPRITES.png)
+
 
 Christopher's design was a calculated response to the Game Boy's particular hardware challenges. The screen's [slow LCD refresh rate](https://www.copetti.org/writings/consoles/game-boy/) - covered in detail in Rodrigo Copetti's hardware analysis - turns fine internal lines into an unreadable smudge in motion.
 
